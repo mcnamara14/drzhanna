@@ -1,9 +1,11 @@
+const path = require('path')
+
 module.exports = async = ({ actions, graphql, reporter, cache }) => {
     const { createPage } = actions
 
     const contact = new Promise((resolve, reject) => {
         createPage({
-            path: 'contact',
+            path: '/contact',
             component: path.resolve('./src/templates/Contact/Contact.js')
         })
         resolve()
