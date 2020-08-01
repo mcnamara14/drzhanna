@@ -40,3 +40,5 @@ exports.createPages = ({ graphql, actions }) => {
     )
   })
 }
+
+exports.createPages = require('./gatsby/createPages')
