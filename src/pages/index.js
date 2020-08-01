@@ -54,7 +54,7 @@ export const pageQuery = graphql`
           tags
           heroImage {
             fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid_noBase64
             }
           }
           description {
@@ -82,7 +82,7 @@ export const pageQuery = graphql`
               resizingBehavior: PAD
               background: "rgb:000000"
             ) {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid_noBase64
             }
           }
         }

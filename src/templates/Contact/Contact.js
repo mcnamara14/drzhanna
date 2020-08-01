@@ -11,7 +11,7 @@ const Contact = () => {
         <Header />
         <StyledRow type="flex" justify="center">
             <Col xs={18}>
-                <H1 color="#000000">Contacsst Dr Zhanna</H1>
+                <H1 color="#000000">Contact Dr Zhanna</H1>
             </Col>
         </StyledRow>   
         </>
