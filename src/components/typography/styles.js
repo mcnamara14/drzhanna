@@ -8,13 +8,15 @@ const baseStyles = css`
 const StyledH1 = styled.h1`
     ${baseStyles} 
     font-family: Playfair Display;
-    font-size: ${({ fontSize }) => fontSize || '36px'};
+    font-size: ${({ fontSize }) => fontSize || '32px'};
 `
 
 const StyledP = styled.p`
     ${baseStyles} 
     font-family: Montserrat;
-    font-size: ${({ fontSize }) => fontSize || '12px'};
+    font-size: ${({ fontSize }) => fontSize || '14px'};
+    line-height: 26px;
+    letter-spacing: 2px;
 `
 
 export { StyledP, StyledH1 }

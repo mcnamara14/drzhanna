@@ -7,14 +7,14 @@ import { Container, Navigation } from './styles'
 const Header = () => {
     return (
         <Container>
-            <H1 style={{ margin: 0 }}>Dr Zhanna</H1>
+            <H1 style={{ margin: 0 }} fontSize="36px">Dr Zhanna</H1>
             <Navigation>
                 <ul>
-                    <li><Link to="/"><P>HOME</P></Link></li>
-                    <li><P>THIS DOC MAKES HOUSECALLS</P></li>
-                    <li><P>SPIRIT AND MIND</P></li>
-                    <li><P>BY THE NUMBERS</P></li>
-                    <li><P>CONTACT</P></li>
+                    <li><Link to="/"><P fontSize="12px">HOME</P></Link></li>
+                    <li><P fontSize="12px">THIS DOC MAKES HOUSECALLS</P></li>
+                    <li><P fontSize="12px">SPIRIT AND MIND</P></li>
+                    <li><P fontSize="12px">BY THE NUMBERS</P></li>
+                    <li><P fontSize="12px">CONTACT</P></li>
                 </ul>
             </Navigation>
         </Container>
