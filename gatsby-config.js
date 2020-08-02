@@ -53,7 +53,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-styled-components`,
+      resolve: `gatsby-plugin-styled-components`, 
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Landscape Land"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
     },
   ],
 }

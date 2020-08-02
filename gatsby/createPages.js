@@ -11,5 +11,13 @@ module.exports = async = ({ actions, graphql, reporter, cache }) => {
         resolve()
     })
 
-    return Promise.all([contact])
+    const byTheNumbers = new Promise((resolve, reject) => {
+        createPage({
+            path: '/by-the-numbers',
+            component: path.resolve('./src/templates/ByTheNumbers/ByTheNumbers.js')
+        })
+        resolve()
+    })
+
+    return Promise.all([byTheNumbers, contact])
 }

@@ -14,7 +14,7 @@ const Header = () => {
                     <li><P fontSize="12px">THIS DOC MAKES HOUSECALLS</P></li>
                     <li><P fontSize="12px">SPIRIT AND MIND</P></li>
                     <li><P fontSize="12px">BY THE NUMBERS</P></li>
-                    <li><P fontSize="12px">CONTACT</P></li>
+                    <li><Link to="/contact"><P fontSize="12px">CONTACT</P></Link></li>
                 </ul>
             </Navigation>
         </Container>
