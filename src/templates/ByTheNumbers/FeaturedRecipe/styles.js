@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Row } from 'antd'
 
 const Container = styled.div`
-  padding: 40px;
+  padding: 20px 40px;
   background-color: #fcfaf6;
 
   h3 {
@@ -25,6 +25,12 @@ const Container = styled.div`
     color: #73746d;
     font-size: 12px;
     line-height: 24px;
+  }
+
+  img {
+    @media (max-width: 576px) {
+      padding-bottom: 40px;
+    }
   }
 `
 

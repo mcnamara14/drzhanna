@@ -9,7 +9,7 @@ import ContactForm from './ContactForm/ContactForm'
 
 const Contact = () => {
     return (
-        <Layout>
+        <Layout path="/contact">
             <Section type="flex" justify="center">
                 <Col xs={18}>
                     <Row type="flex" gutter={60}>

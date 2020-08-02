@@ -1,6 +1,6 @@
 import React from 'react'
-import { Form, Input, Button, Checkbox, Select } from 'antd'
-import { SwapRightOutlined } from '@ant-design/icons'
+import { Form, Input, Checkbox, Select } from 'antd'
+import Button from '../../../components/Button/Button'
 
 import { StyledFormItem } from './styles'
 
@@ -40,14 +40,12 @@ const ContactForm = () => {
                 </Select>
             </StyledFormItem>
 
-            <StyledFormItem name="message">
+            <StyledFormItem name="message" >
                 <Input.TextArea placeholder="message" />
             </StyledFormItem>
 
             <StyledFormItem>
-                <Button type="primary" htmlType="submit">
-                    Submit <SwapRightOutlined />
-                </Button>
+                <Button title="Submit" />
             </StyledFormItem>
         </Form>
     )

@@ -7,10 +7,10 @@ import Quote from '../../components/Quote/Quote'
 import Hero from './Hero/Hero'
 import InnerWrapper from '../../components/InnerWrapper/InnerWrapper'
 import FeaturedRecipe from './FeaturedRecipe/FeaturedRecipe'
+import Recipes from './Recipes/Recipes'
 
-import { Section } from './styles'
-
-const ByTheNumbers = ({ data: { contentfulByTheNumbers } }) => {
+const ByTheNumbers = ({ data: { contentfulByTheNumbers, allContentfulRecipe } }) => {
+    console.log('allContentfulRecipe', allContentfulRecipe)
     return (
         <Layout path="/by-the-numbers">
             <Hero />
@@ -20,6 +20,7 @@ const ByTheNumbers = ({ data: { contentfulByTheNumbers } }) => {
                     author="Orson Welles"
                 />
                 <FeaturedRecipe {...contentfulByTheNumbers?.featuredRecipe}/>
+                <Recipes {...allContentfulRecipe} />
             </InnerWrapper>
         </Layout>
     )
@@ -33,6 +34,13 @@ export const ByTheNumbersQuery = graphql`
             contentful_id: { eq: "7idhXLHme3PP5f6lcj1zLq" }
         ) {
             ...ByTheNumbers
+        }
+        allContentfulRecipe {
+            edges {
+                node {
+                    ...Recipe
+                }
+            }
         }
     }
 `

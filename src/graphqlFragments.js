@@ -18,6 +18,9 @@ export const Recipe = graphql`
       fluid {
         ...GatsbyContentfulFluid_noBase64
       }
+      file {
+        url
+      }
     }
     ingredients
     directions
