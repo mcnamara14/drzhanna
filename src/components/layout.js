@@ -8,7 +8,7 @@ import Footer from './Footer/Footer';
 
 class Template extends React.Component {
     render() {
-        const { location, children } = this.props
+        const { location, children, path } = this.props
         let header
 
         let rootPath = `/`
@@ -18,7 +18,7 @@ class Template extends React.Component {
 
         return (
             <Container>
-                <Header />
+                <Header path={path} />
                 {children}
                 <Footer />
             </Container>

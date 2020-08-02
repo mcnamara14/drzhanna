@@ -10,9 +10,9 @@ export const H1 = ({ children, fontSize, ...otherProps }) => {
     )
 }
 
-export const P = ({ children, fontSize }) => {
+export const P = ({ children, fontWeight, fontSize }) => {
   return (
-      <StyledP fontSize={fontSize}>
+      <StyledP fontSize={fontSize} fontWeight={fontWeight}>
           {children}
       </StyledP>
   )

@@ -23,6 +23,7 @@ const InnerContainer = styled(Col)`
     font-family: Landscape Land;
     font-size: 46px;
     color: #d0a72d;
+    margin: 0;
 
     span {
       letter-spacing: -7px;

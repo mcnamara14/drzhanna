@@ -4,7 +4,8 @@ import { Link } from 'gatsby'
 
 import { Container, Navigation } from './styles'
 
-const Header = () => {
+const Header = ({ path }) => {
+
     return (
         <Container>
             <H1 style={{ margin: 0 }} fontSize="36px">Dr Zhanna</H1>
@@ -13,8 +14,8 @@ const Header = () => {
                     <li><Link to="/"><P fontSize="12px">HOME</P></Link></li>
                     <li><P fontSize="12px">THIS DOC MAKES HOUSECALLS</P></li>
                     <li><P fontSize="12px">SPIRIT AND MIND</P></li>
-                    <li><Link to="/by-the-numbers"><P fontSize="12px">BY THE NUMBERS</P></Link></li>
-                    <li><Link to="/contact"><P fontSize="12px">CONTACT</P></Link></li>
+                    <li><Link to="/by-the-numbers"><P fontSize="12px" fontWeight={path === "/by-the-numbers" && 'bold'}>BY THE NUMBERS</P></Link></li>
+                    <li><Link to="/contact"><P fontSize="12px" fontWeight={path === "/contact" && 'bold'}>CONTACT</P></Link></li>
                 </ul>
             </Navigation>
         </Container>

@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 
 const baseStyles = css`
   color: ${({ color }) => color || '#3b3c36'};
+  font-weight: ${({ fontWeight }) => fontWeight};
   line-height: 100%;
 `
 
