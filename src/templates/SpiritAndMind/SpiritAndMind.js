@@ -3,11 +3,12 @@ import { Col, Row, Form, Input, Button, Checkbox } from 'antd'
 import { H1, P } from '../../components/typography/typography'
 import Layout from '../../components/layout'
 import Hero from './Hero/Hero'
-
-import { Section } from './styles'
 import InnerWrapper from '../../components/InnerWrapper/InnerWrapper'
 import Quote from '../../components/Quote/Quote'
 import Pricing from './Pricing/Pricing';
+
+import { Section } from './styles'
+import Bio from './Bio/Bio';
 
 const SpiritAndMind = ({ data: { contentfulSpiritAndMind } }) => {
     console.log('props', contentfulSpiritAndMind)
@@ -26,6 +27,7 @@ const SpiritAndMind = ({ data: { contentfulSpiritAndMind } }) => {
                 />
                 <Pricing />
             </InnerWrapper>
+            <Bio image={contentfulSpiritAndMind.bioImage} text={contentfulSpiritAndMind.bioText.bioText}/>
         </Layout>
     )
 }

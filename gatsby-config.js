@@ -51,7 +51,7 @@ module.exports = {
           },
           {
             family: `Quicksand`,
-            variants: [`300`]
+            variants: [`300`, `500`, `700`]
           },
         ],
       },

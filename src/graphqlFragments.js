@@ -19,6 +19,14 @@ export const SpiritAndMind = graphql`
     heroText {
       heroText
     }
+    bioImage {
+      fluid {
+        ...GatsbyContentfulFluid_noBase64
+      }
+    }
+    bioText {
+      bioText
+    }
   }
 `
 
