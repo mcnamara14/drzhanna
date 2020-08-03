@@ -17,7 +17,7 @@ const Bio = ({ image, text }) => {
                     <Col xs={24} sm={16}>
                         <h2>Dr Zhanna</h2>
                         <p>{text}</p>
-                        <p className="spirit-and-mind--bio-link"><Link>read full bio</Link></p>
+                        <p className="spirit-and-mind--bio-link"><Link to="/bio">read full bio</Link></p>
                     </Col>
                 </Row>
             </InnerWrapper>

@@ -37,6 +37,11 @@ const Container = styled.div`
             width: auto;
             margin: 0 10px;
             padding: 20px 40px;
+
+            p {
+                line-height: 24px;
+                font-size: 13px;
+            }
         }
     }
 `

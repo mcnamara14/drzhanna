@@ -31,6 +31,16 @@ module.exports = async = ({ actions, graphql, reporter, cache }) => {
         resolve()
     })
 
+    const bio = new Promise((resolve, reject) => {
+        createPage({
+            path: '/bio',
+            component: path.resolve(
+                './src/templates/Bio/Bio.js'
+            )
+        })
+        resolve()
+    })
+
     const recipeDetail = new Promise((resolve, reject) => {
         graphql(
             `
@@ -61,5 +71,5 @@ module.exports = async = ({ actions, graphql, reporter, cache }) => {
         resolve()
     })
 
-    return Promise.all([byTheNumbers, contact, recipeDetail, spiritAndMind])
+    return Promise.all([bio, byTheNumbers, contact, recipeDetail, spiritAndMind])
 }
