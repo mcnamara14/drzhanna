@@ -77,7 +77,7 @@ const PricingTable = styled(Col)`
     }
 
     @media (max-width: 576px) {
-        padding: 30px 0 80px 0;
+        padding: 30px 0 0 0;
         text-align: center;
     }
 `

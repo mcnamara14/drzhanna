@@ -24,8 +24,19 @@ const Container = styled.div`
         }
 
         p {
-          font-family: Montserrat;
-          line-height: 30px;
+            font-family: Montserrat;
+            line-height: 30px;
+        }
+
+        @media (max-width: 768px) {
+            width: auto;
+            margin: 0 50px;
+        }
+
+        @media (max-width: 576px) {
+            width: auto;
+            margin: 0 10px;
+            padding: 20px 40px;
         }
     }
 `
