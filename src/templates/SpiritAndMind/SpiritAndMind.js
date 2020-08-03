@@ -6,18 +6,19 @@ import Hero from './Hero/Hero'
 import InnerWrapper from '../../components/InnerWrapper/InnerWrapper'
 import Quote from '../../components/Quote/Quote'
 import Pricing from './Pricing/Pricing';
-
-import { Section } from './styles'
 import Bio from './Bio/Bio';
 
+import { Section } from './styles'
+
 const SpiritAndMind = ({ data: { contentfulSpiritAndMind } }) => {
-    console.log('props', contentfulSpiritAndMind)
+    const { heroImage, heroText, bioImage, bioText } = contentfulSpiritAndMind
+
     return (
-        <Layout path="/contact">
+        <Layout path="/spirit-and-mind">
             <Section type="flex" justify="center">
                 <Hero
-                    backgroundImage={contentfulSpiritAndMind.heroImage.file.url}
-                    text={contentfulSpiritAndMind.heroText.heroText}
+                    backgroundImage={heroImage.file.url}
+                    text={heroText.heroText}
                 />
             </Section>
             <InnerWrapper>
@@ -27,7 +28,7 @@ const SpiritAndMind = ({ data: { contentfulSpiritAndMind } }) => {
                 />
                 <Pricing />
             </InnerWrapper>
-            <Bio image={contentfulSpiritAndMind.bioImage} text={contentfulSpiritAndMind.bioText.bioText}/>
+            <Bio image={bioImage} text={bioText.bioText}/>
         </Layout>
     )
 }
