@@ -15,7 +15,7 @@ const Section = styled(Row)`
 
   h2 {
     font-family: Landscape Land;
-    font-size: 54px;
+    font-size: 50px;
     color: #4e4e4e;
     margin-bottom: 5px;
     width: 100%;

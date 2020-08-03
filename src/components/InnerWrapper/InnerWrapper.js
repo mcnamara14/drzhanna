@@ -6,7 +6,7 @@ import { StyledRow } from './styles'
 const InnerWrapper = ({ children }) => {
   return (
     <StyledRow justify="center" type="flex">
-      <Col xs={22} lg={16}>{children}</Col>
+      <Col xs={22} md={20} lg={18} xl={16}>{children}</Col>
     </StyledRow>
   )
 }

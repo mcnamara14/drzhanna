@@ -14,15 +14,39 @@ module.exports = async = ({ actions, graphql, reporter, cache }) => {
     const byTheNumbers = new Promise((resolve, reject) => {
         createPage({
             path: '/by-the-numbers',
-            component: path.resolve('./src/templates/ByTheNumbers/ByTheNumbers.js')
+            component: path.resolve(
+                './src/templates/ByTheNumbers/ByTheNumbers.js'
+            )
         })
         resolve()
     })
 
     const recipeDetail = new Promise((resolve, reject) => {
-        createPage({
-            path: '/asparagus-and-mushroom-risotto',
-            component: path.resolve('./src/templates/ByTheNumbers/RecipeDetail/RecipeDetail.js')
+        graphql(
+            `
+            {
+                allContentfulRecipe {
+                    edges {
+                        node {
+                            path
+                        }
+                    }
+                }
+            }
+            `
+        ).then(result => {
+            const pages = result.data.allContentfulRecipe.edges
+            pages.map(({ node }) => {
+                createPage({
+                    path: `/by-the-numbers/${node.path}`,
+                    component: path.resolve(
+                        './src/templates/ByTheNumbers/RecipeDetail/RecipeDetail.js'
+                    ),
+                    context: {
+                        slug: node.path
+                    }
+                })
+            })
         })
         resolve()
     })
