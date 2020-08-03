@@ -8,6 +8,20 @@ export const ByTheNumbers = graphql`
   }
 `
 
+export const SpiritAndMind = graphql`
+  fragment SpiritAndMind on ContentfulSpiritAndMind {
+    internalName
+    heroImage {
+      file {
+        url
+      }
+    }
+    heroText {
+      heroText
+    }
+  }
+`
+
 export const Recipe = graphql`
   fragment Recipe on ContentfulRecipe {
     title

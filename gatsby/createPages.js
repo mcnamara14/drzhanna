@@ -21,6 +21,16 @@ module.exports = async = ({ actions, graphql, reporter, cache }) => {
         resolve()
     })
 
+    const spiritAndMind = new Promise((resolve, reject) => {
+        createPage({
+            path: '/spirit-and-mind',
+            component: path.resolve(
+                './src/templates/SpiritAndMind/SpiritAndMind.js'
+            )
+        })
+        resolve()
+    })
+
     const recipeDetail = new Promise((resolve, reject) => {
         graphql(
             `
@@ -51,5 +61,5 @@ module.exports = async = ({ actions, graphql, reporter, cache }) => {
         resolve()
     })
 
-    return Promise.all([byTheNumbers, contact, recipeDetail])
+    return Promise.all([byTheNumbers, contact, recipeDetail, spiritAndMind])
 }
