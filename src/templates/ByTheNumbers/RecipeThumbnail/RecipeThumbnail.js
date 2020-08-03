@@ -6,15 +6,15 @@ import { SwapRightOutlined } from '@ant-design/icons'
 
 import { Container } from './styles'
 
-const RecipeThumbnail = ({ image, title }) => {
+const RecipeThumbnail = ({ image, title, path }) => {
     return (
-        <Container xs={24} lg={8} backgroundImage={image.file.url}>
+        <Container xs={24} sm={8} backgroundImage={image.file.url}>
             <div className="recipe--image" />
             <div className="recipe--copy">
                 <h5>
                     {title}
                 </h5>
-                <Link>VIEW RECIPE <SwapRightOutlined /></Link>
+                <Link to={`/by-the-numbers/${path}`}>VIEW RECIPE <SwapRightOutlined /></Link>
             </div>
         </Container>
     )

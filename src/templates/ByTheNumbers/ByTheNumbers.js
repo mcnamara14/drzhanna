@@ -9,8 +9,14 @@ import InnerWrapper from '../../components/InnerWrapper/InnerWrapper'
 import FeaturedRecipe from './FeaturedRecipe/FeaturedRecipe'
 import Recipes from './Recipes/Recipes'
 
-const ByTheNumbers = ({ data: { contentfulByTheNumbers, allContentfulRecipe } }) => {
-    console.log('allContentfulRecipe', allContentfulRecipe)
+const ByTheNumbers = ({
+    data: { contentfulByTheNumbers, allContentfulRecipe }
+}) => {
+    const featuredRecipe = contentfulByTheNumbers.featuredRecipe
+    const recipeSectionData = allContentfulRecipe.edges
+        .filter(({ node }) => node.title !== featuredRecipe.title)
+        .map(({ node }) => node)
+
     return (
         <Layout path="/by-the-numbers">
             <Hero />
@@ -19,8 +25,8 @@ const ByTheNumbers = ({ data: { contentfulByTheNumbers, allContentfulRecipe } })
                     quote="My doctor told me I had to stop throwing intimate dinners for four unless there are three other people."
                     author="Orson Welles"
                 />
-                <FeaturedRecipe {...contentfulByTheNumbers?.featuredRecipe}/>
-                <Recipes {...allContentfulRecipe} />
+                <FeaturedRecipe {...featuredRecipe} />
+                <Recipes recipes={recipeSectionData} />
             </InnerWrapper>
         </Layout>
     )

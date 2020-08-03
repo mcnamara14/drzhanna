@@ -1,12 +1,10 @@
 import React from 'react'
 import { Col, Row } from 'antd'
-
-import { Section } from './styles'
 import RecipeThumbnail from '../RecipeThumbnail/RecipeThumbnail'
 
-const Recipes = ({ edges }) => {
-    const recipes = edges.map(({ node }) => node)
+import { Section } from './styles'
 
+const Recipes = ({ recipes }) => {
     return (
         <Section>
             <Col xs={24}>
