@@ -19,5 +19,13 @@ module.exports = async = ({ actions, graphql, reporter, cache }) => {
         resolve()
     })
 
-    return Promise.all([byTheNumbers, contact])
+    const recipeDetail = new Promise((resolve, reject) => {
+        createPage({
+            path: '/asparagus-and-mushroom-risotto',
+            component: path.resolve('./src/templates/ByTheNumbers/RecipeDetail/RecipeDetail.js')
+        })
+        resolve()
+    })
+
+    return Promise.all([byTheNumbers, contact, recipeDetail])
 }

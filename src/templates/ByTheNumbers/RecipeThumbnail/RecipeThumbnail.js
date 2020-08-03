@@ -6,7 +6,7 @@ import { SwapRightOutlined } from '@ant-design/icons'
 
 import { Container } from './styles'
 
-const Recipe = ({ image, title }) => {
+const RecipeThumbnail = ({ image, title }) => {
     return (
         <Container xs={24} lg={8} backgroundImage={image.file.url}>
             <div className="recipe--image" />
@@ -20,4 +20,4 @@ const Recipe = ({ image, title }) => {
     )
 }
 
-export default Recipe
+export default RecipeThumbnail

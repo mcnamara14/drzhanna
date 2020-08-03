@@ -6,7 +6,7 @@ const Container = styled.div`
     background-image: url(${quotes});
     background-repeat: no-repeat;
     background-size: 85px;
-    padding: 10px 40px 0 40px;
+    padding: 10px 40px 20px 40px;
 
     h4 {
         font-family: Playfair Display;

@@ -22,6 +22,7 @@ export const Recipe = graphql`
         url
       }
     }
+    path
     ingredients
     directions
     servings

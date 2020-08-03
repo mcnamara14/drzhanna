@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Row } from 'antd'
 
 import { Section } from './styles'
-import Recipe from '../Recipe/Recipe'
+import RecipeThumbnail from '../RecipeThumbnail/RecipeThumbnail'
 
 const Recipes = ({ edges }) => {
     const recipes = edges.map(({ node }) => node)
@@ -14,7 +14,7 @@ const Recipes = ({ edges }) => {
             </Col>
             <Row gutter={40}>
                 {recipes.map(recipe => {
-                    return <Recipe {...recipe} />
+                    return <RecipeThumbnail {...recipe} />
                 })}
             </Row>
         </Section>
