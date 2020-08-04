@@ -43,6 +43,19 @@ export const Bio = graphql`
     }
 `
 
+export const ThisDocMakesHouseCalls = graphql`
+    fragment ThisDocMakesHouseCalls on ContentfulThisDocMakesHouseCalls {
+        heroImage {
+            fluid {
+                ...GatsbyContentfulFluid_noBase64
+            }
+        }
+        heroText {
+            json
+        }
+    }
+`
+
 export const Recipe = graphql`
     fragment Recipe on ContentfulRecipe {
         title

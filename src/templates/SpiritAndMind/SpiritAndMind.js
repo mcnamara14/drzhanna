@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { Col, Row, Form, Input, Button, Checkbox } from 'antd'
 import { H1, P } from '../../components/typography/typography'
 import Layout from '../../components/layout'
