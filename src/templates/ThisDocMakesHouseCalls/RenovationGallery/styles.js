@@ -57,7 +57,7 @@ const Container = styled(Row)`
                 content: "•";
                 color: white;
                 font-size: 60px;
-                margin:0 6px;
+                margin:0 4px;
             }
 
             li::marker {
@@ -89,6 +89,16 @@ const ThumbRow = styled(Row)`
         position: absolute;
         bottom: 10px;
         right: 30px;
+        border: 2px solid white;
+        background: rgba(0, 0, 0, 0.3);
+        color: white;
+        padding: 5px 10px;
+        font-family: Montserrat;
+
+        &:hover {
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.2);
+        }
     }
 `
 
