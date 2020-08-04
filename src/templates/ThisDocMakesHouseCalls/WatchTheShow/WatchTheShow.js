@@ -1,9 +1,9 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { Col, Row } from 'antd'
-// import RichText from '../../../components/RichText/RichText'
+import watchTheShowImg from '../../../images/watch-the-show-img.jpg'
 
-import { Container, Copy } from './styles'
+import { Container, Copy, Image } from './styles'
 
 const WatchTheShow = ({ heroImage, text }) => {
     return (
@@ -23,9 +23,7 @@ const WatchTheShow = ({ heroImage, text }) => {
                     <p>Phllus sed turpis fringilla, sodales elit et, posuererem. Aliquam a posuere ipsum. Suspendisse</p>
                 </div>
             </Copy>
-            <Col xs={24} sm={12}>
-                Image
-            </Col>
+            <Image xs={24} sm={12} backgroundImage={watchTheShowImg} />
             </Row>
         </Container>
     )
