@@ -38,7 +38,7 @@ export const Bio = graphql`
             }
         }
         bio {
-          bio
+            bio
         }
     }
 `
@@ -52,6 +52,28 @@ export const ThisDocMakesHouseCalls = graphql`
         }
         heroText {
             json
+        }
+    }
+`
+
+export const Homepage = graphql`
+    fragment Homepage on ContentfulHomepage {
+        heroTitle
+        heroImage {
+            fluid {
+                ...GatsbyContentfulFluid_noBase64
+            }
+        }
+        heroText {
+            json
+        }
+        houseCallsText {
+            json
+        }
+        houseCallsImage {
+            file {
+                url
+            }
         }
     }
 `

@@ -11,7 +11,7 @@ const Container = styled.div`
         width: 600px;
         padding: 40px;
         background: #f7f6f3;
-        margin-left: 100px;
+        margin-left: 10vw;
         top: -30px;
         position: relative;
 
