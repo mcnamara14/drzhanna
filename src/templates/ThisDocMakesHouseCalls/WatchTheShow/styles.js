@@ -40,11 +40,12 @@ const Copy = styled(Col)`
     }
 `
 
-const Image = styled.div`
+const Image = styled(Col)`
     background-image: ${({ backgroundImage}) => `url(${backgroundImage})`};
     height: 400px;
-    width: 400px;
+    width: 100%;
     background-size: cover;
+    background-position: bottom;
 `
 
 export { Container, Copy, Image }
