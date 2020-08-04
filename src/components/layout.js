@@ -5,6 +5,8 @@ import Container from './container'
 import Navigation from './navigation'
 import Header from './Header/Header'
 import Footer from './Footer/Footer';
+import 'antd/dist/antd.css';
+import { Helmet } from 'react-helmet'
 
 class Template extends React.Component {
     render() {
@@ -18,6 +20,7 @@ class Template extends React.Component {
 
         return (
             <Container>
+                <Helmet title={'Dr Zhanna'} />
                 <Header path={path} />
                 {children}
                 <Footer />

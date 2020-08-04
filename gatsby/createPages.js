@@ -53,7 +53,7 @@ module.exports = async = ({ actions, graphql, reporter, cache }) => {
 
     const homepage = new Promise((resolve, reject) => {
         createPage({
-            path: '/homepage',
+            path: '/',
             component: path.resolve(
                 './src/templates/Homepage/Homepage.js'
             )
