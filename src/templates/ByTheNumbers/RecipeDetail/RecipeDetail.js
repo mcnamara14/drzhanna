@@ -10,7 +10,6 @@ import { Section } from './styles'
 const RecipeDetail = ({ data: { contentfulRecipe } }) => {
     const {
         title,
-        description,
         image,
         ingredients,
         directions
@@ -39,7 +38,7 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
                                 })}
                             </ul>
                             <h2>Directions</h2>
-                            {directions?.directions?.map((direction, index) => {
+                            {directions?.map((direction, index) => {
                                 return (
                                     <div className="recipe-detail--step">
                                         <b >
