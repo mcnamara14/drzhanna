@@ -2,7 +2,7 @@ import React from 'react'
 import { Form, Input, Checkbox, Select } from 'antd'
 import Button from '../../../components/Button/Button'
 
-import { StyledFormItem } from './styles'
+import { StyledFormItem, StyledForm } from './styles'
 
 const ContactForm = () => {
     const onFinish = values => {
@@ -14,7 +14,7 @@ const ContactForm = () => {
     }
 
     return (
-        <Form
+        <StyledForm
             name="basic"
             initialValues={{
                 remember: true
@@ -47,7 +47,7 @@ const ContactForm = () => {
             <StyledFormItem>
                 <Button title="Submit" />
             </StyledFormItem>
-        </Form>
+        </StyledForm>
     )
 }
 

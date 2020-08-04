@@ -11,9 +11,9 @@ const Contact = () => {
     return (
         <Layout path="/contact">
             <Section type="flex" justify="center">
-                <Col xs={18}>
+                <Col xs={20} xl={16}>
                     <Row type="flex" gutter={60}>
-                        <Col xs={12}>
+                        <Col xs={24} sm={12}>
                             <H1 color="#000000">Contact Dr Zhanna</H1>
                             <P color="#000000">
                                 Interested in finding out more about one of our
@@ -37,7 +37,7 @@ const Contact = () => {
                                 </span>
                             </P>
                         </Col>
-                        <Col xs={12}>
+                        <Col xs={24} sm={12}>
                             <ContactForm />
                         </Col>
                     </Row>

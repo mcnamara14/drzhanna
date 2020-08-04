@@ -57,4 +57,10 @@ const StyledFormItem = styled(Form.Item)`
   }
 `
 
-export { StyledFormItem }
+const StyledForm = styled(Form)`
+  @media (max-width: 576px) {
+    margin-top: 40px;
+  }
+`
+
+export { StyledFormItem, StyledForm }
