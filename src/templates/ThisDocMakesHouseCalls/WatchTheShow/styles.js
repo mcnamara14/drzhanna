@@ -15,7 +15,7 @@ const Container = styled.div`
     h1 {
         font-family: Playfair Display;
         text-align: center;
-        font-size: 40px;
+        font-size: 32px;
         font-weight: 700;
         color: #4e4e4e;
         max-width: max-content;
@@ -28,7 +28,7 @@ const Copy = styled(Col)`
 
     h2 {
         font-family: Playfair Display;
-        font-size: 32px;
+        font-size: 28px;
         line-height: 100%;
         font-weight: 700;
         color: #4e4e4e; 
@@ -37,6 +37,7 @@ const Copy = styled(Col)`
 
     .house-calls--what-the-show--headline {
         margin: 0;
+        font-size: 12px;
     }
 `
 

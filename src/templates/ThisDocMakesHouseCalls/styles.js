@@ -5,6 +5,8 @@ const Section = styled(Row)`
   margin: 80px 0 60px 0;
 
   .house-calls--overview {
+    margin-bottom: 80px;
+
     p {
       font-family: Montserrat;
       text-align: center;
