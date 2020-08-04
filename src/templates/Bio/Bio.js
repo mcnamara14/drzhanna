@@ -12,21 +12,27 @@ const Bio = ({ data: { contentfulBio } }) => {
 
     return (
         <Layout path="/bio">
-            <InnerWrapper>
-                <Section type="flex" justify="center" gutter={60}>
-                    <Col xs={18} sm={12}>
-                        <Img fluid={image} />
-                    </Col>
-                    <Col xs={24} sm={12}>
-                        <h1>Dr. Zhanna</h1>
-                        <p><b>My story...</b></p>
-                        <p>
-                            {bio}
-                        </p>
-                        <p><b>Dr. Zhanna</b></p>
-                    </Col>
-                </Section>
-            </InnerWrapper>
+            <Section type="flex" justify="center">
+                <Col xs={24} md={20}>
+                    <Row type="flex" justify="center" gutter={60}>
+                        <Col xs={18} sm={8}>
+                            <Img fluid={image} />
+                        </Col>
+                        <Col xs={24} sm={12}>
+                            <h1>Dr. Zhanna</h1>
+                            <p>
+                                <b>My story...</b>
+                            </p>
+                            <p>
+                                {bio}
+                            </p>
+                            <p>
+                                <b>Dr. Zhanna</b>
+                            </p>
+                        </Col>
+                    </Row>
+                </Col>
+            </Section>
         </Layout>
     )
 }
