@@ -94,6 +94,7 @@ const ThumbRow = styled(Row)`
         color: white;
         padding: 5px 10px;
         font-family: Montserrat;
+        outline: none !important;
 
         &:hover {
             cursor: pointer;
