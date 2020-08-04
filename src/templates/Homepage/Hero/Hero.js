@@ -9,7 +9,7 @@ const Hero = ({ title, image, text }) => {
     return (
         <Container>
             <InnerContainer gutter={60}>
-                <Copy xs={24} md={16} lg={12}>
+                <Copy xs={24} md={16} lg={12} xxl={11}>
                     <h1>
                         {title}
                     </h1>

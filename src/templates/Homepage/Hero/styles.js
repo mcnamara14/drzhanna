@@ -66,6 +66,10 @@ const Copy = styled(Col)`
         line-height: 40px;
     }
 
+    @media (min-width: 1600px) {
+        margin: 0 200px 0 300px;
+    }
+
     @media (max-width: 1200px) {
         padding: 80px 150px 80px 40px !important;
         margin: 0 200px 0 200px;

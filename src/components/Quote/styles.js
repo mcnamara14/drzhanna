@@ -9,6 +9,7 @@ const Container = styled.div`
     padding: 40px 40px 20px 40px;
     background-position-y: 20px;
     width: max-content;
+    max-width: 100%;
     margin: 40px auto;
 
     h4 {
