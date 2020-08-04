@@ -20,7 +20,13 @@ const Container = styled(Row)`
         padding-right: 15px;
 
         @media (min-width: 576px) {
-            writing-mode: sideways-lr;
+            /* writing-mode: sideways-lr; */
+            -webkit-transform:rotate(270deg);
+            -webkit-transform-origin: 171% 23% 0;
+        }
+
+        @media (max-width: 1200px) {
+            -webkit-transform-origin: 198% 22% 0
         }
 
         @media (max-width: 576px) {
