@@ -17,6 +17,8 @@ const Container = styled(Row)`
     }
 
     .slideshow-container {
+        margin-right: 40px;
+
         .slick-slide {
             left: 0 !important;
             position: absolute !important; 
@@ -32,9 +34,46 @@ const Container = styled(Row)`
         }
 
         .slick-dots {
-            display: block;
+            display: flex !important;
             position: absolute;
             bottom: 20px;
+            left: 30px;
+            padding: 0;
+            justify-content: space-between;
+            width: 60px;
+
+            li {
+                position: relative;
+                width: 100px;
+                height: 60px;
+
+            }
+
+            li.slick-active::before {
+                color: #d0a72d;
+            }
+
+            li::before {
+                content: "•";
+                color: white;
+                font-size: 60px;
+                margin:0 6px;
+            }
+
+            li::marker {
+                color: transparent;
+            }
+
+            button {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                opacity: 0;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
 `
@@ -45,6 +84,12 @@ const ThumbContainer = styled(Col)`
 const ThumbRow = styled(Row)`
     width: 100%;
     height: 100%;
+
+    button {
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+    }
 `
 
 const InnerContainer = styled(Row)`
@@ -52,12 +97,10 @@ const InnerContainer = styled(Row)`
 `
 
 const Image = styled.div`
-    background-image: ${({ backgroundImage }) =>`url(${backgroundImage})`};
+    background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
     background-size: cover;
     height: 100%;
     width: 100%;
 `
-
-
 
 export { Image, Container, InnerContainer, ThumbContainer, ThumbRow }
