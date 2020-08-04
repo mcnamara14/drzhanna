@@ -13,7 +13,7 @@ const WatchTheShow = ({ heroImage, text }) => {
                     <hr />
                 </div>
 
-            <Row gutter={60}>
+            <Row gutter={120}>
             <Copy xs={24} sm={12}>
                 <p className="house-calls--what-the-show--headline">FOLLOW OUR SERIES</p>
                 <h2>TEASER VIDEO</h2>
