@@ -28,6 +28,10 @@ const Container = styled.div`
             line-height: 30px;
         }
 
+        @media (min-width: 1600px) {
+            margin-left: 16vw;
+        }
+
         @media (max-width: 768px) {
             width: auto;
             margin: 0 50px;
