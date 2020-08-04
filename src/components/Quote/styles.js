@@ -8,6 +8,8 @@ const Container = styled.div`
     background-size: 85px;
     padding: 40px 40px 20px 40px;
     background-position-y: 20px;
+    width: max-content;
+    margin: 40px auto;
 
     h4 {
         font-family: Playfair Display;
