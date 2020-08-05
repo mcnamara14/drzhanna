@@ -23,7 +23,7 @@ const SpiritAndMind = ({ title, image, text }) => {
                         <p>We will travel to your Office, Home, On Location or Set, even go with you on Vacation, Office or Virtual visits all available by appointment only.</p>
                         <p>We are here to help people with busy, hectic lives and high octane careers to maximize their potential and minimize their stress. We are here to help you be the best that you can possibly be.</p>
                         <p>No Apologies, Compromises or Excuses!</p>
-                        <Button title="LEARN MORE" />
+                        <Link to="/spirit-and-mind"><Button title="LEARN MORE" /></Link>
                     </Col>
                     <Col xs={12} className="home-page--spirit-and-mind--image">
                         <img src={spiritAndMindImage} />

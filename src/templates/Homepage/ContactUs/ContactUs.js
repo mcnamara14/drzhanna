@@ -12,7 +12,7 @@ const ContactUs = () => {
         <Container backgroundImage={beachBackground} type="flex" justify="center" >
             <InnerContainer xs={22} md={12}>
                 <h3>Want to learn more or book a consultation?</h3>
-                <Button title="Contact Dr Zhanna" />
+                <Link to="/contact"><Button title="Contact Dr Zhanna" /></Link>
             </InnerContainer>
         </Container>
     )
