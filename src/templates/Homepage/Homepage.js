@@ -5,6 +5,8 @@ import Hero from './Hero/Hero'
 import HouseCalls from './HouseCalls/HouseCalls'
 import InnerWrapper from '../../components/InnerWrapper/InnerWrapper'
 import SpiritAndMind from './SpiritAndMind/SpiritAndMind';
+import ContactUs from './ContactUs/ContactUs';
+import ByTheNumbers from './ByTheNumbers/ByTheNumbers';
 
 import { Section } from './styles'
 
@@ -26,6 +28,8 @@ const Homepage = ({ data: { contentfulHomepage } }) => {
                 <HouseCalls text={houseCallsText} image={houseCallsImage} />
             </InnerWrapper>
             <SpiritAndMind />
+            <ContactUs />
+            <ByTheNumbers />
         </Layout>
     )
 }

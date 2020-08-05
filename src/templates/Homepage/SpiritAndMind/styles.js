@@ -62,7 +62,10 @@ const InnerContainer = styled(Col)`
     margin: 30px 0;
     background: #fcf9f4;
     padding: 80px 40px;
-    text-align: center;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 `
 
 const Image = styled(Col)`

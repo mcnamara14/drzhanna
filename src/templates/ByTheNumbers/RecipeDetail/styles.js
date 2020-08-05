@@ -7,16 +7,17 @@ const Section = styled(Row)`
     font-size: 46px;
     color: #d0a72d;
     margin: 0;
-    line-height: 100%;
+    line-height: 36px;
   }
 
   h2 {
     font-family: Playfair Display; 
-    margin-top: 30px; 
+    margin-top: 10px; 
   }
 
   ul {
     list-style: none;
+    margin-bottom: 30px;
 
     li {
       font-family: Montserrat;
@@ -39,6 +40,7 @@ const Section = styled(Row)`
 
   .recipe-detail--step {
     font-family: Montserrat;
+    margin-bottom: 20px;
 
     b, p {
       display: block;

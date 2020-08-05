@@ -1,6 +1,7 @@
 import React from 'react'
 import { Form, Input, Checkbox, Select } from 'antd'
 import Button from '../../../components/Button/Button'
+import { Link } from 'gatsby'
 
 import { StyledFormItem, StyledForm } from './styles'
 
@@ -48,7 +49,7 @@ const ContactForm = () => {
             </StyledFormItem>
 
             <StyledFormItem>
-                <Button title="Submit" />
+                <Link to="/contact"><Button title="Submit" /></Link>
             </StyledFormItem>
         </StyledForm>
     )

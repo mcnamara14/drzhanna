@@ -16,7 +16,7 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
     } = contentfulRecipe
 
     return (
-        <Layout>
+        <Layout path='/by-the-numbers'>
             <Section>
                 <InnerWrapper>
                     <Row gutter={60}>
