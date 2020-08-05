@@ -12,8 +12,8 @@ const Container = styled.div`
 
 const Image = styled.div`
     position: absolute;
-    width: 45%;
-    top: 30px;
+    width: 48%;
+    top: 49px;
     right: -32%;
 
     @media (max-width: 1200px) {

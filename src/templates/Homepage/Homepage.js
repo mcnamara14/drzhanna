@@ -3,9 +3,10 @@ import { Col, Row, Form, Input, Button, Checkbox } from 'antd'
 import Layout from '../../components/layout'
 import Hero from './Hero/Hero'
 import HouseCalls from './HouseCalls/HouseCalls'
+import InnerWrapper from '../../components/InnerWrapper/InnerWrapper'
+import SpiritAndMind from './SpiritAndMind/SpiritAndMind';
 
 import { Section } from './styles'
-import InnerWrapper from '../../components/InnerWrapper/InnerWrapper'
 
 const Homepage = ({ data: { contentfulHomepage } }) => {
     const {
@@ -16,7 +17,6 @@ const Homepage = ({ data: { contentfulHomepage } }) => {
         houseCallsImage
     } = contentfulHomepage
 
-    console.log('contentfulHomepage', contentfulHomepage)
     return (
         <Layout path="/">
             <Section type="flex" justify="center">
@@ -25,6 +25,7 @@ const Homepage = ({ data: { contentfulHomepage } }) => {
             <InnerWrapper>
                 <HouseCalls text={houseCallsText} image={houseCallsImage} />
             </InnerWrapper>
+            <SpiritAndMind />
         </Layout>
     )
 }

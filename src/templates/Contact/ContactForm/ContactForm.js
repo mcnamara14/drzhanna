@@ -36,7 +36,10 @@ const ContactForm = () => {
 
             <StyledFormItem>
                 <Select placeholder="area of interest">
-                    <Select.Option value="demo">Demo</Select.Option>
+                    <Select.Option value="This Doc Makes House Calls">This Doc Makes House Calls</Select.Option>
+                    <Select.Option value="Spirit and Mind">Spirit and Mind</Select.Option>
+                    <Select.Option value="By the Numbers">By the Numbers</Select.Option>
+                    <Select.Option value="General Inquiry">General Inquiry</Select.Option>
                 </Select>
             </StyledFormItem>
 

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Col } from 'antd'
 
 const Container = styled.div`
-    margin: 100px 0 30px 0;
+    margin: 70px 0 30px 0;
 
     &:hover {
         cursor: pointer;
