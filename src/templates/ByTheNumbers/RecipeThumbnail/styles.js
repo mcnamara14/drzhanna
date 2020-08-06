@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Col } from 'antd'
 
 const Container = styled(Col)`
-  margin: 10px 0;
+  margin: 10px 0 30px 0;
 
   .recipe--image {
     height: 200px;
@@ -20,8 +20,11 @@ const Container = styled(Col)`
   }
 
   .recipe--copy {
-    height: 125px;
+    height: 155px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
       a {
         color: #4e4e4e;
@@ -37,6 +40,13 @@ const Container = styled(Col)`
         font-size: 24px;
         line-height: 28px;
         margin-top: 20px;
+      }
+
+      .recipe-link {
+        font-family: Montserrat;
+        color: #3b3c36;
+        font-weight: 400;
+        font-size: 12px;
       }
   }
 `

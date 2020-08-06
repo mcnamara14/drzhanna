@@ -40,11 +40,11 @@ const Section = styled(Row)`
 
   .recipe-detail--step {
     font-family: Montserrat;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     b, p {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 3px;
     }
   }
 
