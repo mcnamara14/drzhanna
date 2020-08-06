@@ -1,51 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import Img from 'gatsby-image'
-import { CloseCircleFilled } from '@ant-design/icons';
 import { Col, Row } from 'antd'
 import watchTheShowImg from '../../../images/watch-the-show-img.jpg'
-import YouTube from 'react-youtube'
+import Video from '../../../components/Video/Video';
 
 import { Container, Copy, Image } from './styles'
 
 const WatchTheShow = ({ heroImage, text }) => {
     const [videoOpen, toggleVideoOpen] = useState(false)
-    const [element, setElement] = useState(null)
-
-    const opts = {
-        height: '100%',
-        width: '100%',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        playerVars: {
-            // https://developers.google.com/youtube/player_parameters
-            autoplay: 1,
-            controls: 1, 
-        }
-    }
-
-    useEffect(
-        () => {
-            if (element) {
-                console.log('element')
-            }
-        },
-        [videoOpen]
-    )
-
-    const onReady = event => {
-        setElement(event)
-    }
 
     const handleCloseClick = () => {
-        console.log('hit')
-        console.log('video', videoOpen)
         toggleVideoOpen(false)
     }
 
     return (
         <Container>
-            {videoOpen && <CloseCircleFilled onClick={() => handleCloseClick()} className="house-calls--what-the-show--close-icon"/>}
+        {videoOpen && <Video videoId="xABe5_PIPCQ" handleCloseClick={handleCloseClick} />}
             <div className="house-calls--what-the-show--title">
                 <h1>What the Show</h1>
                 <hr />
@@ -79,18 +49,7 @@ const WatchTheShow = ({ heroImage, text }) => {
                     sm={12}
                     backgroundImage={watchTheShowImg}
                     onClick={() => toggleVideoOpen(true)}
-                >
-                    {videoOpen &&
-                    <>
-                        <YouTube
-                            videoId="xABe5_PIPCQ"
-                            opts={opts}
-                            onReady={onReady}
-                            className="house-calls--what-the-show--video"
-                            containerClassName="house-calls--what-the-show--video-container"
-                        ></YouTube>
-                    </>};
-                </Image>
+                />
             </Row>
         </Container>
     )

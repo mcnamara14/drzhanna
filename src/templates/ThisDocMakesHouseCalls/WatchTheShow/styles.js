@@ -20,15 +20,6 @@ const Container = styled.div`
         color: #4e4e4e;
         max-width: max-content;
     }
-
-    .house-calls--what-the-show--close-icon {
-        position: fixed;
-        z-index: 2147483647;
-        color: white;
-        top: 30px;
-        right: 40px;
-        font-size: 34px;
-    }
 `
 
 const Copy = styled(Col)`
@@ -59,28 +50,6 @@ const Image = styled(Col)`
 
     &:hover {
         cursor: pointer;
-    }
-
-    .house-calls--what-the-show--video-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 2147483646;
-        background: #222;
-    }
-
-    .house-calls--what-the-show--video {
-        width: 80vw;
-        height: 45vw;
-        margin: auto;
-        position: absolute;
-        display: block;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
     }
 `
 
