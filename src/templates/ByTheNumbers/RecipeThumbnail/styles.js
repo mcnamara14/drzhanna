@@ -48,6 +48,10 @@ const Container = styled(Col)`
         font-weight: 400;
         font-size: 12px;
       }
+
+      @media (max-width: 576px) {
+        height: 110px;
+      }
   }
 `
 
