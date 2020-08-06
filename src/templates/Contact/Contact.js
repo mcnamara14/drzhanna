@@ -25,7 +25,7 @@ const Contact = () => {
                             <P color="#000000">
                                 Phone{' '}
                                 <span className="gold-text">
-                                    (555) 555 - 5555
+                                    (555) 555-5555
                                 </span>
                             </P>
                             <P color="#000000">

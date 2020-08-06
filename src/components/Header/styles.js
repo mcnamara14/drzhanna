@@ -4,7 +4,7 @@ const Container = styled.div`
     padding: 60px 60px 30px 60px;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
     justify-content: space-between;
 
     ul,

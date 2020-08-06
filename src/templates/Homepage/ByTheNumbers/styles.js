@@ -2,13 +2,13 @@ import styled from 'styled-components'
 import { Col, Row } from 'antd'
 
 const Container = styled(Row)`
-    margin: 140px 0 60px 0;
+    margin: 160px 0 100px 0;
     align-items: center;
 `
 
 const Copy = styled(Col)`
     width: auto;
-    padding: 60px 150px 60px 40px !important;
+    padding: 60px 70px 60px 40px !important;
     background: #f7f6f3;
     border-left: 8px solid #d0a72d;
     font-family: Montserrat;
@@ -34,7 +34,7 @@ const Copy = styled(Col)`
         margin-top: 30px;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
         padding: 60px 40px !important;
     }
 `
@@ -42,9 +42,9 @@ const Copy = styled(Col)`
 const Image = styled(Col)`
     background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
     background-size: cover;
-    height: 500px;
+    height: 600px;
 
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
         display: none;
     }
 `

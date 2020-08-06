@@ -19,10 +19,7 @@ const SpiritAndMind = ({ title, image, text }) => {
                         </p>
                         <h1>SPIRIT and MIND</h1>
                         <img src={spiritAndMindImage} className="home-page--spirit-and-mind--mobile-image"/>
-                        <p>Spirit and Mind is a concierge psychology and life coaching service.</p>
-                        <p>We will travel to your Office, Home, On Location or Set, even go with you on Vacation, Office or Virtual visits all available by appointment only.</p>
-                        <p>We are here to help people with busy, hectic lives and high octane careers to maximize their potential and minimize their stress. We are here to help you be the best that you can possibly be.</p>
-                        <p>No Apologies, Compromises or Excuses!</p>
+                        <p>Dr. Zhanna has been helping people improve their lives through holistic and practical approach to emotional, psychological, and mental obstacles. There is nothing in life more exciting then being able to conquer old demons or overcome new challenges. We have been able to help people have more fulfilling relationships, be more successful in their financial world and most importantly fulfill themselves from within.</p>
                         <Link to="/spirit-and-mind"><Button title="LEARN MORE" /></Link>
                     </Col>
                     <Col xs={12} className="home-page--spirit-and-mind--image">

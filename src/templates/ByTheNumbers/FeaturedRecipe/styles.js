@@ -23,7 +23,7 @@ const Container = styled.div`
 
   p {
     color: #73746d;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
   }
 
