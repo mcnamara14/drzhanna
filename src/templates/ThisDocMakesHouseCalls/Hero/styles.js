@@ -62,7 +62,7 @@ const Copy = styled(Col)`
     }
 
     @media (max-width: 1200px) {
-        padding: 80px 150px 80px 40px !important;
+        padding: 80px 40px 80px 40px !important;
     }
 
     @media (max-width: 996px) {

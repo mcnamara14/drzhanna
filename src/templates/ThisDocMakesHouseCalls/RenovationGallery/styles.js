@@ -17,6 +17,7 @@ const Container = styled(Row)`
 
         @media (max-width: 768px) {
             height: 100%;
+            padding-left: 20px;
         }
     }
 
@@ -86,6 +87,10 @@ const Container = styled(Row)`
                 width: 100%;
             }
     }
+
+    @media (max-width: 768px) {
+                margin: 60px 0 0 0;
+            }
 `
 
 const ThumbContainer = styled(Col)`
@@ -128,6 +133,7 @@ const InnerContainer = styled(Row)`
 
     @media (max-width: 768px) {
         height: 100%;
+        padding-right: 20px !important;
     }
 `
 
