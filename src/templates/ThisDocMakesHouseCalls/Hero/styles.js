@@ -2,13 +2,6 @@ import styled from 'styled-components'
 import { Col } from 'antd'
 
 const Container = styled.div`
-    height: 500px;
-    width: 100%;
-    background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
-    background-size: cover;
-    background-position: bottom;
-    position: relative;
-
     @media (max-width: 768px) {
         height: auto;
     }
@@ -16,29 +9,16 @@ const Container = styled.div`
 
 const Image = styled.div`
     position: absolute;
-    width: 70%;
+    width: 43%;
     top: -20px;
-    right: -57%;
+    right: 20px;
 
-    @media (max-width: 1200px) {
-        right: -53%;
-    }
-
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
         display: none;
     }
 `
 
 const Copy = styled(Col)`
-    width: auto;
-    padding: 80px 200px 80px 40px !important;
-    background: #f7f6f3;
-    margin: 0 150px 0 -150px;
-    border-left: 4px solid #d0a72d;
-    font-family: Montserrat;
-    line-height: 24px;
-    font-size: 14px;
-
     h1 {
         font-family: Playfair Display;
         color: #d0a72d;
@@ -62,12 +42,27 @@ const Copy = styled(Col)`
     }
 
     @media (max-width: 1200px) {
-        padding: 80px 40px 80px 40px !important;
+        padding: 0 40px 0 40px !important;
     }
 
     @media (max-width: 996px) {
-        margin: 0 100px;
+        margin: 30px 100px 0 100px;
     }
 `
 
-export { Copy, Container, Image }
+const InnerContainer = styled.div`
+    width: 67%;
+    padding: 80px 200px 80px 40px !important;
+    background: #f7f6f3;
+    border-left: 4px solid #d0a72d;
+    font-family: Montserrat;
+    line-height: 24px;
+    font-size: 14px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 40px !important;
+    }
+`
+
+export { Copy, Container, InnerContainer, Image }
