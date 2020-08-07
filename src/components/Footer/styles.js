@@ -17,6 +17,14 @@ const Container = styled.div`
         color: #d0a72d;
         margin: 0 20px;
     }
+
+    @media (max-width: 568px) {
+        display: block;
+
+        p {
+            font-size: 12px;
+        }
+    }
 `
 
 export { Container }
