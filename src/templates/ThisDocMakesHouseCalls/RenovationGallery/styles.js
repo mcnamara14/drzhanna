@@ -14,6 +14,10 @@ const Container = styled(Row)`
 
     .renovation-gallery--innercontainer {
         padding-left: 40px;
+
+        @media (max-width: 768px) {
+            height: 100%;
+        }
     }
 
     .slideshow-container {
@@ -74,12 +78,22 @@ const Container = styled(Row)`
                     cursor: pointer;
                 }
             }
+
         }
+
+        @media (max-width: 768px) {
+                height: 400px;
+                width: 100%;
+            }
     }
 `
 
 const ThumbContainer = styled(Col)`
     height: 100%;
+
+    @media (max-width: 768px) {
+        margin-top: 50px;
+    }
 `
 const ThumbRow = styled(Row)`
     width: 100%;
@@ -101,10 +115,20 @@ const ThumbRow = styled(Row)`
             background: rgba(0, 0, 0, 0.2);
         }
     }
+
+.renovation-gallery--thumb {
+        @media (max-width: 768px) {
+            height: 200px !important;
+        }
+    }
 `
 
 const InnerContainer = styled(Row)`
     height: 500px;
+
+    @media (max-width: 768px) {
+        height: 100%;
+    }
 `
 
 const Image = styled.div`

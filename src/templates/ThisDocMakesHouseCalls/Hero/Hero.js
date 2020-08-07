@@ -8,8 +8,8 @@ import { Copy, Container, Image } from './styles'
 const Hero = ({ heroImage, text }) => {
     return (
         <Container>
-            <Row gutter={60}>
-                <Copy xs={24} md={12} xxl={10}>
+            <Row gutter={60} type="flex" justify="center">
+                <Copy xs={20} lg={12} xxl={10}>
                     <h1>This Doc Makes House Calls</h1>
                     <p className="this-doc-makes-house-calls--subhead">
                         RENOVATION THROUGH PSYCHOLOGY

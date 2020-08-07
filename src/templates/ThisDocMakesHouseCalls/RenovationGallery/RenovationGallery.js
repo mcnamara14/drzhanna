@@ -31,7 +31,7 @@ const RenovationGallery = ({ heroImage, text }) => {
     return (
         <>
         <Container justify="center">
-            <Col xs={22} className="renovation-gallery--innercontainer">
+            <Col xs={24} className="renovation-gallery--innercontainer">
                 <h3>Renovation Gallery</h3>
                 <InnerContainer style={{ paddingRight: 40 }}>
                     <Col xs={24} md={12}>
@@ -47,11 +47,11 @@ const RenovationGallery = ({ heroImage, text }) => {
                             </Slider>
                         </div>
                     </Col>
-                    <ThumbContainer xs={12}>
+                    <ThumbContainer xs={24} md={12}>
                         <ThumbRow gutter={40}>
                             {galleryThumbnails.map(gallery => {
                                 return (
-                                    <Col xs={24} md={12} style={{ marginBottom: 40, height: 'calc(50% - 20px)'}}>
+                                    <Col xs={12} md={12} style={{ marginBottom: 40, height: 'calc(50% - 20px)'}} className="renovation-gallery--thumb">
                                         <button onClick={() => updateSelectedGallery(gallery.name)}>View Home</button>
                                         <Image backgroundImage={gallery.images[0]} />
                                     </Col>

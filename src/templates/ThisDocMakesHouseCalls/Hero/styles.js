@@ -8,6 +8,10 @@ const Container = styled.div`
     background-size: cover;
     background-position: bottom;
     position: relative;
+
+    @media (max-width: 768px) {
+        height: auto;
+    }
 `
 
 const Image = styled.div`
@@ -18,6 +22,10 @@ const Image = styled.div`
 
     @media (max-width: 1200px) {
         right: -53%;
+    }
+
+    @media (max-width: 992px) {
+        display: none;
     }
 `
 

@@ -51,6 +51,10 @@ const Image = styled(Col)`
     &:hover {
         cursor: pointer;
     }
+
+    @media (max-width: 768px) {
+        margin-top: 40px;
+    }
 `
 
 export { Container, Copy, Image }
