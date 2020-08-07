@@ -8,6 +8,10 @@ const Section = styled(Row)`
     color: #d0a72d;
     font-weight: bold;
   }
+
+  @media (max-width: 992px) {
+    margin: 0 0 60px 0;
+  }
 `
 
 export { Section }
