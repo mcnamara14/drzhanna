@@ -10,7 +10,7 @@ const Recipes = ({ recipes }) => {
             <Col xs={24}>
                 <h2>Recipes</h2>
             </Col>
-            <Row gutter={40} type="flex" justify="center">
+            <Row gutter={40} className="recipes--thumbnails">
                 {recipes.map(recipe => {
                     return <RecipeThumbnail {...recipe} />
                 })}

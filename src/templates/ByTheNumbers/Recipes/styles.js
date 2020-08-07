@@ -24,7 +24,9 @@ const Section = styled(Row)`
   }
 
   @media (max-width: 576px) {
-    .ant-row {
+    .recipes--thumbnails {
+      display: flex;
+      justify-content: center;
       margin: 0;
     }
   }
