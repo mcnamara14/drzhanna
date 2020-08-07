@@ -35,6 +35,7 @@ const ImageBottom = styled.div`
 
     @media (max-width: 768px) {
         display: block;
+        margin: -40px auto 0 auto;
     }
 `
 
@@ -80,7 +81,7 @@ const Copy = styled(Col)`
     }
 
     @media (max-width: 768px) {
-        padding: 80px !important;
+        padding: 40px 40px 80px 40px !important;
         margin: 0;
     }
 `
