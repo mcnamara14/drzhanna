@@ -6,6 +6,10 @@ const Container = styled.div`
   border: 2px solid #CCC;
   position: relative;
 
+  .gatsby-image-wrapper {
+    border: 2px solid #f5f5f5;
+  }
+
   &:before {
     width: calc(100% - 10px);
     height: calc(100% - 10px);
@@ -34,13 +38,16 @@ const Container = styled.div`
     text-transform: uppercase;
     color: #73746d;
     line-height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
+    font-weight: 500;
   }
 
   p {
-    color: #73746d;
+    font-family: Montserrat;
+    color: #888;
+    line-height: 22px;
     font-size: 14px;
-    line-height: 24px;
+    margin-bottom: 20px;
   }
 
   img {

@@ -16,7 +16,7 @@ const Section = styled(Row)`
 
 const InnerContainer = styled(Col)`
   background: white;
-  padding: 30px;
+  padding: 30px 40px;
   text-align: center;
 
   &:before {
@@ -47,9 +47,14 @@ const InnerContainer = styled(Col)`
 
   p {
     font-family: Montserrat;
+    color: #888;
+    line-height: 22px;
+    font-size: 14px;
 
     span {
       font-weight: bold;
+      color: #777;
+      font-size: 16px;
     }
   }
 `

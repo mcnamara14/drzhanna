@@ -2,13 +2,24 @@ import styled from 'styled-components'
 import { Col } from 'antd'
 
 const Container = styled(Col)`
-  margin: 10px 0 30px 0;
+  margin: 0 0 30px 0;
+
+  &:hover {
+    box-shadow: rgba(11, 26, 33, 0.08) 0px 3px 10px;
+
+    @media (max-width: 576px) {
+      box-shadow: none;
+    }
+  }
 
   .recipe--image {
     height: 200px;
     width: 100%;
+    margin-top: 20px;
     background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
     background-size: cover;
+    position: relative;
+    border: 2px solid #f5f5f5;
   }
 
   h2 {
@@ -40,19 +51,28 @@ const Container = styled(Col)`
         font-size: 24px;
         line-height: 28px;
         margin-top: 20px;
+
+        @media (max-width: 576px) {
+          margin-bottom: 30px;
+        }
       }
 
       .recipe-link {
         font-family: Montserrat;
-        color: #3b3c36;
+        color: #666;
         font-weight: 400;
         font-size: 12px;
       }
 
       @media (max-width: 576px) {
         height: 110px;
+        padding-bottom: 20px;
       }
   }
+
+      @media (max-width: 576px) {
+        padding: 20px 0 !important;
+      }
 `
 
 export { Container }

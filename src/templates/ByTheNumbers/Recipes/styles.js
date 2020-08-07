@@ -4,6 +4,7 @@ import { Row } from 'antd'
 const Section = styled(Row)`
   margin: 60px 0;
 
+
   .gold-text, a {
     color: #d0a72d;
     font-weight: bold;
@@ -19,6 +20,13 @@ const Section = styled(Row)`
     color: #4e4e4e;
     margin-bottom: 5px;
     width: 100%;
+    line-height: 40px;
+  }
+
+  @media (max-width: 576px) {
+    .ant-row {
+      margin: 0;
+    }
   }
 `
 
