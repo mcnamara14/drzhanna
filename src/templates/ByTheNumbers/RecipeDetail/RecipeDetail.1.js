@@ -19,18 +19,12 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
         <Layout path='/by-the-numbers'>
             <Section>
                 <InnerWrapper>
-                    <Row gutter={60} type="flex" justify="center">
-                        <Col xs={24} sm={12} className="recipe-detail--desktop-image">
-                            <Img fluid={image.fluid} />
-                            <div className="recipe-detail--title">
-                                <h1>
-                                    {title}
-                                </h1>
-                                <hr />
-                                <p>4 servings <span>&</span> 150 calories </p>
-                            </div>
-                        </Col>
-                        <Col xs={24} sm={12} className="recipe-detail--ingredients">
+                    <Row gutter={60}>
+                        <Col xs={24} sm={12}>
+                            <h1>
+                                {title}
+                            </h1>
+                            <Img fluid={image.fluid} className="recipe-detail--mobile-image" />
                             <h2>Ingredients</h2>
                             <ul>
                                 {ingredients?.map(ingredient => {
@@ -57,6 +51,9 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
                                 )
                             })}
                         </Col>
+                        <Col xs={0} sm={12}>
+                            <Img fluid={image.fluid} />
+                        </Col>
                     </Row>
                 </InnerWrapper>
             </Section>
@@ -66,10 +63,10 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
 
 export default RecipeDetail
 
-export const RecipeDetailQuery = graphql`
-    query RecipeDetailQuery($slug: String!) {
-        contentfulRecipe(path: { eq: $slug }) {
-            ...Recipe
-        }
-    }
-`
+// export const RecipeDetailQuery = graphql`
+//     query RecipeDetailQuery($slug: String!) {
+//         contentfulRecipe(path: { eq: $slug }) {
+//             ...Recipe
+//         }
+//     }
+// `
