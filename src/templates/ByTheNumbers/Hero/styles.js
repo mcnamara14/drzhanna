@@ -19,6 +19,21 @@ const InnerContainer = styled(Col)`
   padding: 30px;
   text-align: center;
 
+  &:before {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: transparent;
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    border: 2px solid #CCC;
+  }
+
   h1 {
     font-family: Landscape Land;
     font-size: 46px;
