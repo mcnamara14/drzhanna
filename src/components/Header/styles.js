@@ -21,6 +21,14 @@ const Container = styled.div`
     img {
         height: 48px;
         width: auto;
+
+        @media (max-width: 992px) {
+            height: 37px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        padding: 60px 30px 30px 30px;
     }
 `
 

@@ -11,7 +11,7 @@ const Header = ({ path }) => {
     let isMobile
     const windowSize = useWindowSize()
 
-    if (windowSize.width < 900) {
+    if (windowSize.width < 992) {
         isMobile = true
     } else {
         isMobile = false

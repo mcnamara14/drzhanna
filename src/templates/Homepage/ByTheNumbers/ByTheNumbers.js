@@ -11,7 +11,7 @@ import { Container, Copy, Image } from './styles'
 const ByTheNumbers = ({ title, image, text }) => {
     return (
         <Row type="flex" justify="center">
-            <Col xs={24} sm={18} xxl={18}>
+            <Col xs={22} sm={18} xxl={18}>
                 <Container>
                     <Copy xs={24} md={14}>
                         <h3>By the Numbers</h3>

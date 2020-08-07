@@ -22,7 +22,7 @@ const Container = styled.div`
     }
 
     @media (max-width: 768px) {
-        margin: 400px 0 30px 0;
+        margin: 475px 0 30px 0;
 
         .ant-row {
             width: 100%;
@@ -40,7 +40,7 @@ const Image = styled(Col)`
  
     @media (max-width: 768px) {
         margin: 0 auto 40px auto;
-        width: calc(100% - 100px);
+        width: calc(100% - 40px);
     }
 `
 
@@ -61,6 +61,10 @@ const Copy = styled(Col)`
         @media (max-width: 1200px) {
             line-height: 38px;
         }
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 20px !important;
     }
 `
 
