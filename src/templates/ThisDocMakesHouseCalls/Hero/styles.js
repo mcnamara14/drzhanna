@@ -19,7 +19,7 @@ const Image = styled.div`
 
     @media (min-width: 1600px) {
         position: absolute;
-        width: 29%;
+        width: 35%;
         top: -20px;
         right: 155px;
     }
