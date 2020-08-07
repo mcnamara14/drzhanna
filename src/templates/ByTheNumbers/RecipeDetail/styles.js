@@ -76,7 +76,7 @@ const Section = styled(Row)`
   }
 
   .recipe-detail--title {
-    padding: 40px 20px;
+    padding: 30px 20px;
     background: white;
     margin-top: -30px;
     z-index: 10;
