@@ -65,6 +65,11 @@ const Copy = styled(Col)`
     .this-doc-makes-house-calls--subhead {
         color: #9a9a9a;
         line-height: 40px;
+
+        @media (max-width: 576px) {
+            line-height: 19px;
+            margin-top: 10px;
+        }
     }
 
     @media (min-width: 1600px) {
