@@ -3,6 +3,7 @@ import { P, H1 } from '../typography/typography'
 import { Link } from 'gatsby'
 import MobileMenu from './MobileMenu/MobileMenu'
 import useWindowSize from '../../hooks/useWindowSize'
+import logo from '../../images/drzhanna-website-logo.jpg'
 
 import { Container, Navigation } from './styles'
 
@@ -18,9 +19,7 @@ const Header = ({ path }) => {
 
     return (
         <Container>
-            <H1 style={{ margin: 0 }} fontSize="36px">
-                Dr Zhanna
-            </H1>
+            <img src={logo} />
             {isMobile
                 ? <MobileMenu />
                 : <Navigation>

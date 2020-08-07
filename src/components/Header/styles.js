@@ -17,6 +17,11 @@ const Container = styled.div`
         float: left;
         margin-left: 40px;
     }
+
+    img {
+        height: 48px;
+        width: auto;
+    }
 `
 
 const Navigation = styled.div`
