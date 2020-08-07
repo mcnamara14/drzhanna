@@ -72,6 +72,7 @@ const Container = styled(Col)`
 
       @media (max-width: 576px) {
         padding: 20px 0 !important;
+        margin: 0 !important;
       }
 `
 

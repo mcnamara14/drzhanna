@@ -16,6 +16,10 @@ const Container = styled.div`
         font-family: Playfair Display;
         font-size: 24px;
         color: #6c6c6c;
+
+        @media (max-width: 576px) {
+          font-size: 18px;
+        }
     }
 
     p {
@@ -26,6 +30,12 @@ const Container = styled.div`
     img {
       position: absolute;
       width: 60px;
+    }
+
+    @media (max-width: 576px) {
+      background-size: 60px;
+      background-position-x: 30px;
+      background-position-y: 30px;
     }
 `
 

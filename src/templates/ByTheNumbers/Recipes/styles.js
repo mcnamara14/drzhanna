@@ -27,7 +27,7 @@ const Section = styled(Row)`
     .recipes--thumbnails {
       display: flex;
       justify-content: center;
-      margin: 0;
+      margin: 0 !important;
     }
   }
 `

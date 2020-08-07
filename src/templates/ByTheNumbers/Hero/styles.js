@@ -57,6 +57,10 @@ const InnerContainer = styled(Col)`
       font-size: 16px;
     }
   }
+
+  @media (max-width: 576px) {
+    margin-top: 30px;
+  }
 `
 
 export { InnerContainer, Section }
