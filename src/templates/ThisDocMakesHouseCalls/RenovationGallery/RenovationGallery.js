@@ -51,8 +51,8 @@ const RenovationGallery = ({ heroImage, text }) => {
                   className="renovation-gallery--innercontainer"
               >
                   <h3>Renovation Gallery</h3>
-                  <InnerContainer style={{ paddingRight: 40 }}>
-                      <Col xs={24} md={12}>
+                  <InnerContainer style={{ paddingRight: 40 }} type="flex" justify="center">
+                      <Col xs={22} md={12} className="renovation-gallery--featured-slideshow">
                           <div className="slideshow-container">
                               <Slider {...settings}>
                                   {slideshowGallery.map(image => {

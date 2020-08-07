@@ -54,7 +54,7 @@ const Image = styled(Col)`
 
     @media (max-width: 768px) {
         margin-top: 40px;
-        background-position: left;
+        background-position: left !important;
     }
 `
 

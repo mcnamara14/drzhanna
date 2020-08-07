@@ -10,6 +10,10 @@ const Container = styled(Row)`
         font-family: Playfair Display;
         font-size: 30px;
         color: #4e4e4e;
+
+        @media (max-width: 768px) {
+            padding-left: 20px;
+        }
     }
 
     .renovation-gallery--innercontainer {
@@ -83,7 +87,7 @@ const Container = styled(Row)`
         }
 
         @media (max-width: 768px) {
-                height: 300px;
+                height: 250px;
                 width: 100%;
             }
     }
@@ -121,11 +125,16 @@ const ThumbRow = styled(Row)`
         }
     }
 
-.renovation-gallery--thumb {
+    .renovation-gallery--thumb {
         @media (max-width: 768px) {
             height: 150px !important;
+            padding: 0 10px !important;
         }
     }
+
+        @media (max-width: 768px) {
+            margin: 0px !important;
+        }
 `
 
 const InnerContainer = styled(Row)`
@@ -151,7 +160,7 @@ const FeaturedImage = styled.div`
     width: 100%;
 
     @media (max-width: 768px) {
-        height: 300px !important;
+        height: 250px !important;
     }
 `
 
