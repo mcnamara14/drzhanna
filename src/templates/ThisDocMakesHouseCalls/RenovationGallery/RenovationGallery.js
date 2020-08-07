@@ -13,7 +13,6 @@ import renovationGalleryData from './renovationGalleryData';
 const RenovationGallery = ({ heroImage, text }) => {
     const [selectedGallery, setSelectedGallery] = useState('gallery1')
     const slideshowGallery = renovationGalleryData.find(gallery => gallery.name === selectedGallery).images
-    const galleryThumbnails = renovationGalleryData.filter(gallery => gallery.name !== selectedGallery)
   
     const settings = {
         arrows: false,
@@ -49,7 +48,7 @@ const RenovationGallery = ({ heroImage, text }) => {
                     </Col>
                     <ThumbContainer xs={24} md={12}>
                         <ThumbRow gutter={40}>
-                            {galleryThumbnails.map(gallery => {
+                            {renovationGalleryData.map(gallery => {
                                 return (
                                     <Col xs={12} md={12} style={{ marginBottom: 40, height: 'calc(50% - 20px)'}} className="renovation-gallery--thumb">
                                         <button onClick={() => updateSelectedGallery(gallery.name)}>View Home</button>
