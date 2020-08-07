@@ -18,7 +18,7 @@ const Bio = ({ data: { contentfulBio } }) => {
                         <Col xs={18} sm={8}>
                             <Img fluid={image} />
                         </Col>
-                        <Col xs={24} sm={12}>
+                        <Col xs={20} sm={12}>
                             <h1>Dr. Zhanna</h1>
                             <p>
                                 <b>My story...</b>

@@ -6,7 +6,7 @@ import { Container, PricingTable, Services } from './styles'
 const Pricing = ({ backgroundImage, text }) => {
     return (
         <Container gutter={60}>
-            <Services xs={24} sm={12}>
+            <Services xs={24} md={12}>
                 <div className="spirit-and-mind--pricing-services-title">
                     PRICING
                 </div>

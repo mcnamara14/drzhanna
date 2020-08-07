@@ -19,7 +19,7 @@ const Container = styled(Row)`
         justify-content: center;
         padding-right: 15px;
 
-        @media (min-width: 576px) {
+        @media (min-width: 768px) {
             /* writing-mode: sideways-lr; */
             -webkit-transform:rotate(270deg);
             -webkit-transform-origin: 171% 23% 0;
@@ -29,7 +29,7 @@ const Container = styled(Row)`
             -webkit-transform-origin: 198% 22% 0
         }
 
-        @media (max-width: 576px) {
+        @media (max-width: 768px) {
             display: block;
             width: 100%;
             margin-bottom: 20px;
@@ -51,7 +51,7 @@ const Container = styled(Row)`
             margin-bottom: 7px;
         }
 
-        @media (max-width: 576px) {
+        @media (max-width: 768px) {
             display: block;
             width: 100%;
         }
@@ -61,7 +61,7 @@ const Container = styled(Row)`
 const Services = styled(Col)`
     display: flex;
 
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
         display: block;
         width: 100%;
     }
@@ -82,7 +82,7 @@ const PricingTable = styled(Col)`
         margin-bottom: 3px;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
         padding: 30px 0 0 0;
         text-align: center;
     }
