@@ -16,7 +16,11 @@ const FeaturedRecipe = ({ description, title, image, path }) => {
           <Img fluid={image?.fluid} />
         </Col>
         <Col xs={24} sm={15}>
-          <h4>{title}</h4>
+          <div className="featured-recipe--title">
+            <p className="featured-recipe--headline">almost</p>
+            <h4>Fried Rice</h4>
+            <h5>Chicken / Pork / Shrimp / Vegetarian</h5>
+          </div>
           <p>{description?.description}</p>
           <Link to={`/by-the-numbers/${path}`}><Button title="VIEW RECIPE" margin="10px 0" /></Link>
         </Col>

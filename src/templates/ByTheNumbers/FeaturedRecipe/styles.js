@@ -33,13 +33,34 @@ const Container = styled.div`
   }
 
   h4 {
-    font-family: Montserrat;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #73746d;
+    font-family: Playfair Display;
+    font-size: 24px;
+    color: #6c6c6c;
     line-height: 100%;
-    margin-bottom: 17px;
+    margin-bottom: 5px;
     font-weight: 500;
+  }
+
+  h5 {
+    font-family: Montserrat;
+    margin-bottom: 10px;
+    color: #73746d;
+  }
+
+  .featured-recipe--title {
+    margin-top: -23px;
+
+    @media (max-width: 576px) {
+      margin-top: 30px;
+    }
+  }
+
+  .featured-recipe--headline {
+    font-family: Landscape Land;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #d0a72d;
+    margin: 0;
   }
 
   p {
@@ -48,12 +69,6 @@ const Container = styled.div`
     line-height: 22px;
     font-size: 14px;
     margin-bottom: 20px;
-  }
-
-  img {
-    @media (max-width: 576px) {
-      padding-bottom: 40px;
-    }
   }
 `
 
