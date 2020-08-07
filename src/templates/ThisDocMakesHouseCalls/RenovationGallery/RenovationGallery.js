@@ -7,7 +7,7 @@ import poolAfter from '../../../images/sample-gallery/pool-after.jpg'
 import slideshowImage from '../../../images/watch-the-show-img.jpg'
 import Slider from "react-slick";
 
-import { InnerContainer, Container, Image, ThumbContainer, ThumbRow } from './styles'
+import { InnerContainer, Container, FeaturedImage,  Image, ThumbContainer, ThumbRow } from './styles'
 import renovationGalleryData from './renovationGalleryData';
 
 const RenovationGallery = ({ heroImage, text }) => {
@@ -40,7 +40,7 @@ const RenovationGallery = ({ heroImage, text }) => {
                                 {slideshowGallery.map(image => {
                                     return (
                                         <div>
-                                            <Image backgroundImage={image} />
+                                            <FeaturedImage backgroundImage={image} />
                                         </div>
                                     )
                                 })}

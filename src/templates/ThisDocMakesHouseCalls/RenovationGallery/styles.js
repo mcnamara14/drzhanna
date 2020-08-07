@@ -83,7 +83,7 @@ const Container = styled(Row)`
         }
 
         @media (max-width: 768px) {
-                height: 400px;
+                height: 300px;
                 width: 100%;
             }
     }
@@ -123,7 +123,7 @@ const ThumbRow = styled(Row)`
 
 .renovation-gallery--thumb {
         @media (max-width: 768px) {
-            height: 200px !important;
+            height: 150px !important;
         }
     }
 `
@@ -142,10 +142,17 @@ const Image = styled.div`
     background-size: cover;
     height: 100%;
     width: 100%;
+`
+
+const FeaturedImage = styled.div`
+    background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 
     @media (max-width: 768px) {
-        height: 400px !important;
+        height: 300px !important;
     }
 `
 
-export { Image, Container, InnerContainer, ThumbContainer, ThumbRow }
+export { Image, Container, FeaturedImage, InnerContainer, ThumbContainer, ThumbRow }
