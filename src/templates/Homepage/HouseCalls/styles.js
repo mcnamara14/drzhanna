@@ -39,8 +39,21 @@ const Image = styled(Col)`
     width: 80%;
  
     @media (max-width: 768px) {
+        display: none;
+    }
+`
+
+const MobileImage = styled(Col)`
+    background: ${({ backgroundImage }) => `url(${backgroundImage})`};
+    background-size: cover;
+    height: 400px;
+    width: 80%;
+    display: none;
+ 
+    @media (max-width: 768px) {
+        display: block;
         margin: 0 auto 40px auto;
-        width: calc(100% - 40px);
+        width: 100%;
     }
 `
 
@@ -68,4 +81,4 @@ const Copy = styled(Col)`
     }
 `
 
-export { Copy, Container, Image }
+export { Copy, Container, MobileImage, Image }

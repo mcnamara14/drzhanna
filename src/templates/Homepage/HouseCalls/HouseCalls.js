@@ -6,7 +6,7 @@ import RichText from '../../../components/RichText/RichText'
 import SplitPlayButton from '../../../components/SplitButton/SplitPlayButton'
 import Video from '../../../components/Video/Video'
 
-import { Copy, Container, Image } from './styles'
+import { Copy, Container, Image, MobileImage } from './styles'
 
 const HouseCalls = ({ title, image, text }) => {
     const [videoOpen, toggleVideoOpen] = useState(false)
@@ -33,6 +33,14 @@ const HouseCalls = ({ title, image, text }) => {
                 </Image>
                 <Copy xs={24} md={12}>
                     <h1>This Doc Makes House Calls</h1>
+                    <MobileImage
+                        xs={24}
+                        md={8}
+                        backgroundImage={image.file.url}
+                        onClick={() => toggleVideoOpen(true)}
+                    >
+                        <SplitPlayButton />
+                    </MobileImage>
                     <RichText content={text.json} />
                     <button>
                         <Link to="/this-doc-makes-house-calls">
