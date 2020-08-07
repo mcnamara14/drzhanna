@@ -3,7 +3,23 @@ import { Row } from 'antd'
 
 const Container = styled.div`
   padding: 20px 40px;
-  background-color: #fcfaf6;
+  border: 2px solid #CCC;
+  position: relative;
+
+  &:before {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: transparent;
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    border: 1px solid #CCC;
+  }
 
   h3 {
     font-family: Landscape Land;
