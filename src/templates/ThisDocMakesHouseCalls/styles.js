@@ -13,6 +13,10 @@ const Section = styled(Row)`
       color: #737373;
     }
   }
+
+  @media (max-width: 992px) {
+    margin: 0 0 60px 0;
+  }
 `
 
 export { Section }

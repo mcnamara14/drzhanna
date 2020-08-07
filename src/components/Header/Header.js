@@ -19,7 +19,7 @@ const Header = ({ path }) => {
 
     return (
         <Container>
-            <img src={logo} />
+            <Link to="/"><img src={logo} /></Link>
             {isMobile
                 ? <MobileMenu />
                 : <Navigation>
