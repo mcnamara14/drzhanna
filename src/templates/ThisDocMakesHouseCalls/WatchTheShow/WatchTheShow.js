@@ -22,7 +22,7 @@ const WatchTheShow = ({ heroImage, text }) => {
             </div>
 
             <Row gutter={120} type="flex" justify="center">
-                <Copy xs={22} md={12}>
+                <Copy xs={22} md={12} xxl={10}>
                     <p className="house-calls--what-the-show--headline">
                         FOLLOW OUR SERIES
                     </p>
@@ -47,6 +47,7 @@ const WatchTheShow = ({ heroImage, text }) => {
                 <Image
                     xs={18}
                     md={12}
+                    xxl={8}
                     backgroundImage={watchTheShowImg}
                     onClick={() => toggleVideoOpen(true)}
                 />

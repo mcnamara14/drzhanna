@@ -16,6 +16,13 @@ const Image = styled.div`
     @media (max-width: 768px) {
         display: none;
     }
+
+    @media (min-width: 1600px) {
+        position: absolute;
+        width: 29%;
+        top: -20px;
+        right: 155px;
+    }
 `
 
 const Copy = styled(Col)`

@@ -31,7 +31,7 @@ const RenovationGallery = ({ heroImage, text }) => {
     return (
         <>
         <Container justify="center">
-            <Col xs={24} lg={22} className="renovation-gallery--innercontainer">
+            <Col xs={24} lg={22} xxl={18} className="renovation-gallery--innercontainer">
                 <h3>Renovation Gallery</h3>
                 <InnerContainer style={{ paddingRight: 40 }}>
                     <Col xs={24} md={12}>
