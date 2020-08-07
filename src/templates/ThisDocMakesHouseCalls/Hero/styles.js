@@ -33,7 +33,7 @@ const Copy = styled(Col)`
     width: auto;
     padding: 80px 200px 80px 40px !important;
     background: #f7f6f3;
-    margin: 0 150px;
+    margin: 0 150px 0 -150px;
     border-left: 4px solid #d0a72d;
     font-family: Montserrat;
     line-height: 24px;
