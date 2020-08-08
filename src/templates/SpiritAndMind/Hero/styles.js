@@ -6,14 +6,34 @@ const Container = styled.div`
     background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
     background-size: cover;
     background-position: bottom;
+    position: relative;
 
     .spirit-and-mind--hero-copy {
         width: 600px;
-        padding: 40px;
         background: #f7f6f3;
         margin-left: 10vw;
         top: -30px;
         position: relative;
+
+        span {
+            height: 100%;
+            width: 100% !important;
+            display: block;
+            padding: 40px;
+            z-index: 2;
+            background: #f7f6f3;
+        }
+
+        &:before {
+            content: '';
+            background: #e5e3dc;
+            height: 50%;
+            width: 50%;
+            position: absolute;
+            bottom: -15px;
+            left: -15px;
+            z-index: -1;
+        }
 
         h1 {
             font-family: Quicksand;

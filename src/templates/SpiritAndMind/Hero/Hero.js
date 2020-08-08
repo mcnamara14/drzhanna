@@ -7,8 +7,10 @@ const Hero = ({ backgroundImage, text }) => {
     return (
         <Container backgroundImage={backgroundImage}>
             <div className="spirit-and-mind--hero-copy">
-                <h1>SPIRIT and MIND</h1>
-                <p>{text}</p>
+                <span>
+                    <h1>SPIRIT and MIND</h1>
+                    <p>{text}</p>
+                </span>
             </div>
         </Container>
     )
