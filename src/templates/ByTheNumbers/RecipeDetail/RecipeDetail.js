@@ -15,6 +15,8 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
         directions
     } = contentfulRecipe
 
+    const isFriedRice = title === 'Chicken Fried Rice'
+
     return (
         <Layout path='/by-the-numbers'>
             <Section>
@@ -23,11 +25,21 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
                         <Col xs={24} sm={12} className="recipe-detail--desktop-image">
                             <Img fluid={image.fluid} />
                             <div className="recipe-detail--title">
+                            {isFriedRice ? (
+                                <>
+                            <p className="featured-recipe--headline">almost</p>
+                            <h1>Fried Rice</h1>
+                            <h5>Chicken / Pork / Shrimp / Vegetarian</h5> 
+                            </>
+                            ) : (
+                                <>
                                 <h1>
                                     {title}
                                 </h1>
                                 <hr />
                                 <p>4 servings <span>&</span> 150 calories </p>
+                                </>
+                            )}
                             </div>
                         </Col>
                         <Col xs={24} sm={12} className="recipe-detail--ingredients">

@@ -103,6 +103,22 @@ const Section = styled(Row)`
       color: #BBB;
     }
   }
+  
+  .featured-recipe--headline {
+    font-family: Landscape Land !important;
+    font-size: 24px !important;
+    letter-spacing: 1px !important;
+    color: #999;
+    text-transform: none !important;
+    margin: 0;
+    line-height: 24px !important;
+  }
+
+  h5 {
+    font-family: Montserrat;
+    margin-bottom: 10px;
+    color: #73746d;
+  }
 
   .recipe-detail--ingredients {
     margin-bottom: 50px;
