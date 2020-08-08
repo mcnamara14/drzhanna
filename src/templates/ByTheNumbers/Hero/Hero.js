@@ -19,8 +19,8 @@ const Hero = () => {
                 </p>
                 <p>
                     These recipes are not only fast and low cal, they are really
-                    good! The most important part of successful weight loss is
-                    not being hungry, but eating fewer calories usually means
+                    good! The most important part of successful weight loss program is
+                    not feeling hungry, but eating fewer calories usually means
                     giving up portions. With these low calorie recipes you can
                     have both amazing taste and good size portions, actually
                     great size portions! So you will never be hungry, yet eat a
