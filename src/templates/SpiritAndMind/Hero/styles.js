@@ -22,6 +22,7 @@ const Container = styled.div`
             padding: 40px;
             z-index: 2;
             background: #f7f6f3;
+            position: relative;
         }
 
         &:before {
@@ -32,7 +33,7 @@ const Container = styled.div`
             position: absolute;
             bottom: -15px;
             left: -15px;
-            z-index: -1;
+            z-index: 1;
         }
 
         h1 {
