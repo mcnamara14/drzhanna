@@ -46,7 +46,7 @@ const Image = styled(Col)`
     height: 400px;
     width: 100%;
     background-size: cover;
-    background-position: bottom;
+    background-position: right;
 
     &:hover {
         cursor: pointer;
@@ -54,7 +54,7 @@ const Image = styled(Col)`
 
     @media (max-width: 768px) {
         margin-top: 40px;
-        background-position: left !important;
+        background-position: right !important;
     }
 `
 

@@ -45,9 +45,9 @@ const WatchTheShow = ({ heroImage, text }) => {
                     </div>
                 </Copy>
                 <Image
-                    xs={18}
-                    md={12}
-                    xxl={8}
+                    xs={14}
+                    md={10}
+                    xxl={6}
                     backgroundImage={watchTheShowImg}
                     onClick={() => toggleVideoOpen(true)}
                 />
