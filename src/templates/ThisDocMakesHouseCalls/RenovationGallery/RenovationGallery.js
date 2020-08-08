@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Img from 'gatsby-image'
 import { Col, Row } from 'antd'
 import RichText from '../../../components/RichText/RichText'
-import poolBefore from '../../../images/sample-gallery/pool-before.jpg'
-import poolAfter from '../../../images/sample-gallery/pool-after.jpg'
 import slideshowImage from '../../../images/watch-the-show-img.jpg'
 import Slider from 'react-slick'
 
