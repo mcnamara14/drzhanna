@@ -32,7 +32,7 @@ const RenovationGallery = ({ heroImage, text }) => {
     const settings = {
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         dots: true,
         fade: true,
         className: 'slideshow'
@@ -90,7 +90,7 @@ const RenovationGallery = ({ heroImage, text }) => {
                                           </button>
                                           <Image
                                               backgroundImage={
-                                                  gallery.images[0]
+                                                  gallery.images[1]
                                               }
                                           />
                                       </Col>

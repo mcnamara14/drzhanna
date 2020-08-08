@@ -5,14 +5,24 @@ const Section = styled(Row)`
   margin: 60px 0;
   
   h1 {
-    font-family: Playfair Display;
-    font-size: 34px;
+    font-family: Landscape Land;
+    font-size: 54px;
     line-height: 100%;
+    margin-bottom: 5px;
   }
 
   p {
     font-family: Montserrat;
     line-height: 28px;
+  }
+
+  b {
+    font-size: 18px;
+  }
+
+  .signature {
+    width: 54%;
+    margin-top: 20px;
   }
 
   @media (max-width: 576px) {

@@ -149,6 +149,7 @@ const InnerContainer = styled(Row)`
 const Image = styled.div`
     background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
     background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
 `
@@ -156,6 +157,7 @@ const Image = styled.div`
 const FeaturedImage = styled.div`
     background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
     background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
 

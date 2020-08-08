@@ -10,10 +10,10 @@ const Container = styled(Row)`
         align-items: center;
 
         h2 {
-            font-family: Quicksand;
+            font-family: Landscape Land;
             font-weight: 500;
             letter-spacing: -2px;
-            font-size: 40px;
+            font-size: 52px;
             line-height: 46px;
         }
 

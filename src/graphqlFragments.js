@@ -40,6 +40,9 @@ export const Bio = graphql`
         bio {
             bio
         }
+        bioCopy {
+            json
+        }
     }
 `
 

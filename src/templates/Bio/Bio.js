@@ -2,13 +2,16 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { Col, Row } from 'antd'
 import Layout from '../../components/layout'
+import InnerWrapper from '../../components/InnerWrapper/InnerWrapper'
+import RichText from '../../components/RichText/RichText';
+import signature from '../../images/signature.png'
 
 import { Section } from './styles'
-import InnerWrapper from '../../components/InnerWrapper/InnerWrapper'
 
 const Bio = ({ data: { contentfulBio } }) => {
     const image = contentfulBio.image.fluid
     const bio = contentfulBio.bio.bio
+    const bioCopy = contentfulBio.bioCopy
 
     return (
         <Layout path="/bio">
@@ -23,12 +26,11 @@ const Bio = ({ data: { contentfulBio } }) => {
                             <p>
                                 <b>My story...</b>
                             </p>
-                            <p>
-                                {bio}
-                            </p>
+                            <RichText content={bioCopy.json} />
                             <p>
                                 <b>Dr. Zhanna</b>
                             </p>
+                            <img src={signature} className="signature"/>
                         </Col>
                     </Row>
                 </Col>
