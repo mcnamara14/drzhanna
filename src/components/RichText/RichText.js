@@ -3,7 +3,6 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 
 const RichText = ({ content }) => {
-    console.log('content', content)
     const options = {
         renderMark: {
             [MARKS.BOLD]: text =>
@@ -13,7 +12,6 @@ const RichText = ({ content }) => {
         },
         renderNode: {
             [BLOCKS.PARAGRAPH]: (node, children) => {
-                console.log('children', children)
                 return (
                     <p>
                         {children}

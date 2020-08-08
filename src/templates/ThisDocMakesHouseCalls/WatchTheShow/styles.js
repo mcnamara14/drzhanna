@@ -48,6 +48,17 @@ const Image = styled(Col)`
     background-size: cover;
     background-position: right;
 
+    &:after {
+        content: '';
+        background: #f7f6f3;
+        height: 50%;
+        width: 75%;
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        z-index: -1;
+    }
+
     &:hover {
         cursor: pointer;
     }

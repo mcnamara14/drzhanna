@@ -13,6 +13,29 @@ const Image = styled.div`
     top: -20px;
     right: 20px;
 
+    &:before {
+        content: '';
+        background: #f7f6f3;
+        height: 50%;
+        width: 75%;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+    }
+
+    &:after {
+        content: '';
+        background: transparent;
+        height: 40%;
+        width: 40%;
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        z-index: -1;
+        border-bottom: 1px solid #999;
+        border-right: 1px solid #999;
+    }
+
     @media (max-width: 768px) {
         display: none;
     }
@@ -76,5 +99,6 @@ const InnerContainer = styled.div`
         padding: 40px !important;
     }
 `
+
 
 export { Copy, Container, InnerContainer, Image }

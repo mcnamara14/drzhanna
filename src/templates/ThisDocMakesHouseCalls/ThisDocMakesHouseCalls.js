@@ -13,15 +13,12 @@ import { Section } from './styles'
 const ThisDocMakesHouseCalls = ({
     data: { contentfulThisDocMakesHouseCalls }
 }) => {
-    const { heroText, heroImage } = contentfulThisDocMakesHouseCalls
-    console.log(
-        'contentfulThisDocMakesHouseCalls',
-        contentfulThisDocMakesHouseCalls
-    )
+    const { heroText, heroImageTwo, heroImage } = contentfulThisDocMakesHouseCalls
+
     return (
         <Layout path="/this-doc-makes-house-calls">
             <Section type="flex" justify="center">
-                <Hero text={heroText} heroImage={heroImage} />
+                <Hero text={heroText} heroImage={heroImage} heroImageTwo={heroImageTwo} />
                 <InnerWrapper>
                     <Quote
                         quote="To live an aesthetic Life is like being able to fly where others walk"
