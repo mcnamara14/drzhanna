@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Col, Row } from 'antd'
+import goldSplatterImage from '../../../images/gold-splatter.jpg'
 
 const Container = styled.div`
     height: 500px;
@@ -15,6 +16,38 @@ const Image = styled.div`
     width: 48%;
     top: 49px;
     right: -32%;
+
+    &:before {
+        content: '';
+        background: #e5e3dc;
+        height: 50%;
+        width: 90%;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+    }
+
+    &:after {
+        background: url(${goldSplatterImage});
+        content: '';
+        background-repeat: repeat;
+        background-size: auto;
+        height: 150%;
+        width: 150%;
+        position: absolute;
+        bottom: -240px;
+        right: -120px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+
+        @media (max-width: 1200px) {
+            height: 175%;
+            width: 175%;
+            bottom: -296px;
+            right: -94px;
+        }
+    }
 
     @media (max-width: 1200px) {
         right: -37%;
@@ -34,8 +67,34 @@ const ImageBottom = styled.div`
     width: 52%;
 
     @media (max-width: 768px) {
+        width: 40%;
         display: block;
         margin: -40px auto 0 auto;
+    }
+
+    @media (max-width: 576px) {
+        width: 52%;
+        display: block;
+        margin: -40px auto 0 auto;
+    }
+
+    &:after {
+        background: url(${goldSplatterImage});
+        content: '';
+        background-repeat: repeat;
+        background-size: auto;
+        height: 150%;
+        width: 150%;
+        position: absolute;
+        bottom: -240px;
+        right: -120px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+
+        @media (max-width: 768px) {
+            right: -100px;
+        }
     }
 `
 
