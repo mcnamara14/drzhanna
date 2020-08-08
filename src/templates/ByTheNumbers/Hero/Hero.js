@@ -23,7 +23,7 @@ const Hero = () => {
                     not feeling hungry, but eating fewer calories usually means
                     giving up portions. With these low calorie recipes you can
                     have both amazing taste and good size portions, actually
-                    great size portions! So you will never be hungry, yet eat a
+                    great size portions! So you will never be hungry, yet you will eat a
                     lot fewer calories. What more can one ask for!
                 </p>
             </InnerContainer>
