@@ -14,13 +14,13 @@ const Pricing = ({ backgroundImage, text }) => {
                     <div className="spirit-and-mind--pricing-services-copy">
                         <h3>SERVICES</h3>
                         <ul>
-                            <li>Cognitive-Behavioral Approach to Life</li>
+                            <li>Cognitive-Behavioral Approach</li>
                             <li>Didactic-Behavioral Approach</li>
                             <li>Spiritual and holistic</li>
                             <li>Practical Life Coaching and Mentoring</li>
                             <li>
                                 Specializing in Entertainment and Real Estate
-                                Industry
+                                Industries
                             </li>
                             <li>Nutritional Psychology</li>
                         </ul>
