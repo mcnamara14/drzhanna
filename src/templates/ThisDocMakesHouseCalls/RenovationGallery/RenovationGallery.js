@@ -88,7 +88,7 @@ const RenovationGallery = ({ heroImage, text }) => {
                                           </button>
                                           <Image
                                               backgroundImage={
-                                                  gallery.images[1]
+                                                  gallery.images[3]
                                               }
                                           />
                                       </Col>
