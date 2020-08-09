@@ -21,7 +21,7 @@ const Section = styled(Row)`
   }
 
   .signature {
-    width: 54%;
+    width: 250px;
     margin-top: 20px;
   }
 
