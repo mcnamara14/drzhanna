@@ -50,12 +50,13 @@ const Image = styled.div`
 
 const Copy = styled(Col)`
     h1 {
-        font-family: Playfair Display;
-        color: #d0a72d;
-        font-weight: 300;
-        letter-spacing: -1px;
+        font-family: Trend Sans Four;
+        color: #4e4e4e;
+        font-weight: 300;;
+        letter-spacing: -2px;
         font-size: 34px;
         margin-bottom: 0;
+        line-height: 36px;
 
         @media (max-width: 1200px) {
             line-height: 38px;

@@ -17,7 +17,7 @@ const WatchTheShow = ({ heroImage, text }) => {
         <Container>
         {videoOpen && <Video videoId="xABe5_PIPCQ" handleCloseClick={handleCloseClick} />}
             <div className="house-calls--what-the-show--title">
-                <h1>What the Podcast</h1>
+                <h1>Watch the Podcast</h1>
                 <hr />
             </div>
 

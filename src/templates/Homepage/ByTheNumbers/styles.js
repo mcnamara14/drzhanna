@@ -17,10 +17,12 @@ const Copy = styled(Col)`
     height: max-content;
 
     .by-the-numbers--subtitle {
+        font-weight: bold;
+        color: #777;
+        font-size: 16px;
         line-height: 20px;
         font-size: 13px;
         margin-top: 5px;
-        color: #73746d;
     }
 
     h3 {
@@ -28,6 +30,10 @@ const Copy = styled(Col)`
         font-size: 46px;
         color: #d0a72d;
         margin: 0;
+
+        span {
+            letter-spacing: -7px;
+            }
     }
 
     button {
@@ -43,6 +49,23 @@ const Image = styled(Col)`
     background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
     background-size: cover;
     height: 600px;
+
+        &:before {
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        background: transparent;
+        content: ' ';
+        position: absolute;
+        display: block;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+        border: 2px solid white;
+        }
+
 
     @media (max-width: 768px) {
         display: none;

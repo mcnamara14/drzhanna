@@ -2,3 +2,8 @@
   font-family: "Landscape Land";
   src: url("Landscape-Land.otf");
 }
+
+@font-face {
+  font-family: "Trend Sans Four";
+  src: url("TrendSansFour.ttf");
+}

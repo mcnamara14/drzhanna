@@ -67,8 +67,8 @@ const Copy = styled(Col)`
     font-size: 14px;
 
     h1 {
-        font-family: Playfair Display;
-        color: #d0a72d;
+        font-family: Trend Sans Four;
+        color: #4e4e4e;
         font-weight: 500;
         letter-spacing: -1px;
         font-size: 34px;
