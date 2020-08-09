@@ -25,6 +25,26 @@ const Section = styled(Row)`
     margin-top: 20px;
   }
 
+  .bio--by-the-numbers {
+    font-family: Landscape Land;
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  .bio--subtitle {
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #888;  
+  }
+
+  .bio--quote {
+    font-size: 24px;
+  }
+
+  .bio--letter-spacing {
+    letter-spacing: -3px;
+  }
+
   @media (max-width: 576px) {
     img {
       padding-bottom: 30px;
