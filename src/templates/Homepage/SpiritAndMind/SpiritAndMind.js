@@ -19,7 +19,7 @@ const SpiritAndMind = ({ title, image, text }) => {
                         </p>
                         <h1>SPIRIT and MIND</h1>
                         <img src={spiritAndMindImage} className="home-page--spirit-and-mind--mobile-image"/>
-                        <p>Dr. Zhanna has been helping people improve their lives through holistic and practical approach to emotional, psychological, and mental obstacles. There is nothing in life more exciting then being able to conquer old demons or overcome new challenges. We have been able to help people have more fulfilling relationships, be more successful in their financial world and most importantly fulfill themselves from within.</p>
+                        <p>Dr. Zhanna has been helping people improve their lives through holistic, practical approach to emotional, psychological, and mental obstacles. There is nothing in life more exciting then being able to conquer old demons or overcome new challenges. We have been able to help people have more fulfilling relationships, be more successful in their financial world and most importantly fulfill themselves from within.</p>
                         <Link to="/spirit-and-mind"><Button title="LEARN MORE" /></Link>
                     </Col>
                     <Col xs={12} className="home-page--spirit-and-mind--image">

@@ -19,7 +19,7 @@ const Contact = () => {
                                 Interested in finding out more about one of our
                                 services? Fill out the form and we will get back
                                 to you shortly. You can also contact us by phone
-                                and email. We look forward to speaking with you<br />
+                                and email. We look forward to speaking with you.<br />
                                 <br />
                             </P>
                             <P color="#000000">
