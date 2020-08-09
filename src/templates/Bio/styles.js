@@ -28,7 +28,7 @@ const Section = styled(Row)`
   .bio--by-the-numbers {
     font-family: Landscape Land;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .bio--subtitle {
@@ -38,7 +38,7 @@ const Section = styled(Row)`
   }
 
   .bio--quote {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .bio--letter-spacing {
