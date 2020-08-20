@@ -97,7 +97,9 @@ export const Recipe = graphql`
         }
         path
         ingredients
-        directions
+        directions {
+            json
+        }
         servings
         calories
     }

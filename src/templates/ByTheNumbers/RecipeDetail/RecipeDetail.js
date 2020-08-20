@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import InnerWrapper from '../../../components/InnerWrapper/InnerWrapper'
 import Layout from '../../../components/layout'
+import RichText from '../../../components/RichText/RichText'
 
 import { Section } from './styles'
 
@@ -12,7 +13,9 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
         title,
         image,
         ingredients,
-        directions
+        directions,
+        servings,
+        calories
     } = contentfulRecipe
 
     const isFriedRice = title === 'Chicken Fried Rice'
@@ -37,7 +40,7 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
                                     {title}
                                 </h1>
                                 <hr />
-                                <p>4 servings <span>&</span> 150 calories </p>
+                                <p>{servings} servings <span>&</span> {calories} calories </p>
                                 </>
                             )}
                             </div>
@@ -56,18 +59,7 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
                                 })}
                             </ul>
                             <h2>Directions</h2>
-                            {directions?.map((direction, index) => {
-                                return (
-                                    <div className="recipe-detail--step">
-                                        <b >
-                                            STEP {index + 1}
-                                        </b>
-                                        <span>
-                                            {direction}
-                                        </span>
-                                    </div>
-                                )
-                            })}
+                            <RichText content={directions.json} />
                         </Col>
                     </Row>
                 </InnerWrapper>

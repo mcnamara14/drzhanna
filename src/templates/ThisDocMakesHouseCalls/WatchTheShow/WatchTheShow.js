@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Img from 'gatsby-image'
 import { Col, Row } from 'antd'
-import watchTheShowImg from '../../../images/watch-the-show-img.jpg'
+import watchTheShowImg from '../../../images/this-doc-makes-house-calls-coming-soon.jpg'
 import Video from '../../../components/Video/Video';
 
 import { Container, Copy, Image } from './styles'
@@ -26,22 +26,13 @@ const WatchTheShow = ({ heroImage, text }) => {
                     <p className="house-calls--what-the-show--headline">
                         FOLLOW OUR SERIES
                     </p>
-                    <h2>TEASER VIDEO</h2>
+                    <h2>COMING SOON</h2>
                     <div className="house-calls--whatch-the-show--body">
-                        <p>
-                            Lorem ipsum dolor sit amet, con sectetur adipiscing
-                            elit. Quisque vel ls a nunc pharetra laoreet. Phllus
-                            sed turpis fringilla, sodales elit et, posuererem.
-                            Aliquam a posuere ipsum. Suspendisse.
-                        </p>
-                        <p>
-                            Aliquam a posuere ipsum. Suspendisse fermentum augue
-                            nec.
-                        </p>
-                        <p>
-                            Phllus sed turpis fringilla, sodales elit et,
-                            posuererem. Aliquam a posuere ipsum. Suspendisse
-                        </p>
+                    <p>I want my podcast to educate, inform and entertain. I hope that we can answer some of your
+questions about the Real Estate profession and expose some important insights that can help
+those who engage in any Real Estate transaction avoid being duped or taken advantage of. We
+would love to hear from you, the audience. Send us your questions, comments and personal
+experiences and we will share them on our future podcasts.</p>
                     </div>
                 </Copy>
                 <Image
@@ -49,7 +40,7 @@ const WatchTheShow = ({ heroImage, text }) => {
                     md={10}
                     xxl={6}
                     backgroundImage={watchTheShowImg}
-                    onClick={() => toggleVideoOpen(true)}
+                    // onClick={() => toggleVideoOpen(true)}
                 />
             </Row>
         </Container>

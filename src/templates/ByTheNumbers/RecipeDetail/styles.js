@@ -48,7 +48,7 @@ const Section = styled(Row)`
     }
   }
 
-  .gatsby-image-wrapper {
+  .gatsby-image-wrapper {w
     &:before {
       width: calc(100% - 10px);
       height: calc(100% - 10px);
@@ -122,6 +122,12 @@ const Section = styled(Row)`
 
   .recipe-detail--ingredients {
     margin-bottom: 50px;
+
+    p {
+      font-family: Montserrat;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.65);
+    }
   }
 `
 

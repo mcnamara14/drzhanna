@@ -43,9 +43,10 @@ const Copy = styled(Col)`
 
 const Image = styled(Col)`
     background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
-    height: 400px;
+    height: 355px;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: right;
 
     &:after {

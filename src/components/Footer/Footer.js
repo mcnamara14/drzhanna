@@ -24,8 +24,8 @@ const Footer = () => {
                   </>
                 : <P fontSize="12px">
                       @COPYRIGHT DRZHANNA.COM 2020{' '}
-                      <span className="gold-text">|</span> ZHANNA@DRZHANNA.COM{' '}
-                      <span className="gold-text">|</span> 555-555-5555
+                      <span className="gold-text">|</span> DZHANNA@DRZHANNA.COM{' '}
+                      <span className="gold-text">|</span> 858-633-7944
                   </P>}
         </Container>
     )

@@ -25,14 +25,14 @@ const Contact = () => {
                             <P color="#000000">
                                 Phone{' '}
                                 <span className="gold-text">
-                                    (555) 555-5555
+                                    (858) 633-7944
                                 </span>
                             </P>
                             <P color="#000000">
                                 Email{' '}
                                 <span className="gold-text">
-                                    <a href="mailto:drzhanna@yahoo.com">
-                                        drzhanna@yahoo.com
+                                    <a href="mailto:drzhanna@drzhanna.com">
+                                        drzhanna@drzhanna.com
                                     </a>
                                 </span>
                             </P>
