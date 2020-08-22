@@ -64,10 +64,6 @@ const Image = styled(Col)`
         }
     }
 
-    &:hover {
-        cursor: pointer;
-    }
-
     @media (max-width: 768px) {
         height: 320px;
         margin-top: 40px;
