@@ -43,7 +43,7 @@ const Copy = styled(Col)`
 
 const Image = styled(Col)`
     background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
-    height: 355px;
+    height: 295px;
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -58,6 +58,10 @@ const Image = styled(Col)`
         bottom: -20px;
         right: -20px;
         z-index: -1;
+
+        @media (max-width: 768px) {
+            width: 50%;
+        }
     }
 
     &:hover {
@@ -65,8 +69,14 @@ const Image = styled(Col)`
     }
 
     @media (max-width: 768px) {
+        height: 320px;
         margin-top: 40px;
-        background-position: right !important;
+        background-position: center !important;
+    }
+
+    @media (max-width: 500px) {
+        height: 295px;
+        background-size: cover;
     }
 `
 

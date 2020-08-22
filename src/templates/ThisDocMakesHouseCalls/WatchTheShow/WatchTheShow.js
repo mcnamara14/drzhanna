@@ -36,7 +36,8 @@ experiences and we will share them on our future podcasts.</p>
                     </div>
                 </Copy>
                 <Image
-                    xs={14}
+                    xs={16}
+                    sm={12}
                     md={10}
                     xxl={6}
                     backgroundImage={watchTheShowImg}
