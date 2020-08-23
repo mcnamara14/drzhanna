@@ -44,7 +44,7 @@ const Header = ({ path }) => {
                                           'bold'
                                       }
                                   >
-                                      THIS DOC MAKES HOUSECALLS
+                                      THIS DOC MAKES HOUSE CALLS
                                   </P>
                               </Link>
                           </li>
