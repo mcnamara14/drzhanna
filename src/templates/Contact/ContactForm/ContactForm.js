@@ -13,11 +13,11 @@ const ContactForm = () => {
                 .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
                 .join("&");
           }
-          console.log('encode', encode({ "form-name": "contact-form", "name": "Tile", "email": "mcnamara14@gmail.com" , "phone": "555-555-5555"}))
-        fetch("/", {
+
+          fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact-form", "name": "Tile", "email": "mcnamara14@gmail.com" , "phone": "555-555-5555"})
+            body: encode({ "form-name": "contact-form", ...values})
           })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
@@ -30,7 +30,7 @@ const ContactForm = () => {
 
     return (
         <StyledForm
-            name="basic"
+            name="contact-form"
             initialValues={{
                 remember: true
             }}
@@ -50,7 +50,7 @@ const ContactForm = () => {
                 <Input placeholder="full name" />
             </StyledFormItem>
 
-            <StyledFormItem>
+            <StyledFormItem name="areaOfInterest">
                 <Select placeholder="area of interest">
                     <Select.Option value="This Doc Makes House Calls">This Doc Makes House Calls</Select.Option>
                     <Select.Option value="Spirit and Mind">Spirit and Mind</Select.Option>
@@ -61,7 +61,7 @@ const ContactForm = () => {
 
             <StyledFormItem name="message" >
                 <Input.TextArea placeholder="message" />
-                <input type="hidden" name="message" value="contact" />
+                <input type="hidden" name="contact-form" value="message" />
             </StyledFormItem>
 
             <StyledFormItem>
