@@ -22,6 +22,9 @@ const ContactForm = () => {
             }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
+            method="POST"
+            data-netlify="true"
+            name="contact-form"
         >
             <StyledFormItem
                 name="fullName"
@@ -49,7 +52,7 @@ const ContactForm = () => {
             </StyledFormItem>
 
             <StyledFormItem>
-                <Link to="/contact"><Button title="Submit" /></Link>
+               <Button title="Submit" />
             </StyledFormItem>
         </StyledForm>
     )
