@@ -9,9 +9,8 @@ const ContactForm = () => {
     const [state, setState] = useState({})
 
     const handleChange = (e, event) => {
-        console.log('event', event  )
         if (event) {
-            setState({ ...state, [event.name]: event.value })
+            setState({ ...state, ["areaOfInterest"]: event.value })
         } else {
             setState({ ...state, [e.target.name]: e.target.value })
         }
@@ -24,7 +23,7 @@ const ContactForm = () => {
                 .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
                 .join("&");
           }
-
+          
           fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -52,11 +51,6 @@ const ContactForm = () => {
             data-netlify-honeypot="bot-field"
         >
         <input type="hidden" name="form-name" value="contact-form" />
-        <p hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-          </label>
-        </p>
             <StyledFormItem
                 name="fullName"
                 rules={[
