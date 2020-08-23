@@ -51,7 +51,7 @@ module.exports = async = ({ actions, graphql, reporter, cache }) => {
         resolve()
     })
 
-    const comingSoon = new Promise((resolve, reject) => {
+    const homepage = new Promise((resolve, reject) => {
         createPage({
             path: '/',
             component: path.resolve(
@@ -91,5 +91,5 @@ module.exports = async = ({ actions, graphql, reporter, cache }) => {
         resolve()
     })
 
-    return Promise.all([bio, byTheNumbers, homepage, contact, recipeDetail, spiritAndMind, thisDocMakesHouseCalls, comingSoon])
+    return Promise.all([bio, byTheNumbers, homepage, contact, recipeDetail, spiritAndMind, thisDocMakesHouseCalls ])
 }
