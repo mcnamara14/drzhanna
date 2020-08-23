@@ -11,7 +11,7 @@ const ContactForm = () => {
     const handleChange = (e) => {
       setState({ ...state, [e.target.name]: e.target.value })
     }
-    console.log('state', state)
+
     const handleSelect = (value, event, name) => {
         setState({ ...state, [name]: value })
       }
@@ -49,8 +49,8 @@ const ContactForm = () => {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
         >
-                        <input type="hidden" name="form-name" value="contact-form" />
-               <p hidden>
+        <input type="hidden" name="form-name" value="contact-form" />
+        <p hidden>
           <label>
             Don’t fill this out: <input name="bot-field" onChange={handleChange} />
           </label>
@@ -68,7 +68,7 @@ const ContactForm = () => {
             </StyledFormItem>
 
             <StyledFormItem name="areaOfInterest" >
-                <Select placeholder="area of interest" onSelect={(value, event) => handleSelect(value, event, "areaOfInterest")}>
+                <Select placeholder="area of interest" name="areaOfInterest" onSelect={(value, event) => handleSelect(value, event, "areaOfInterest")}>
                     <Select.Option value="This Doc Makes House Calls" name="areaOfInterest" >This Doc Makes House Calls</Select.Option>
                     <Select.Option value="Spirit and Mind" name="areaOfInterest" >Spirit and Mind</Select.Option>
                     <Select.Option value="By the Numbers" name="areaOfInterest" >By the Numbers</Select.Option>
