@@ -71,10 +71,10 @@ const ContactForm = () => {
 
             <StyledFormItem name="areaOfInterest" >
                 <Select placeholder="area of interest" name="areaOfInterest" onSelect={(value, event) => handleChange(value, event)}>
-                    <Select.Option value="This Doc Makes House Calls" name="areaOfInterest" >This Doc Makes House Calls</Select.Option>
-                    <Select.Option value="Spirit and Mind" name="areaOfInterest" >Spirit and Mind</Select.Option>
-                    <Select.Option value="By the Numbers" name="areaOfInterest" >By the Numbers</Select.Option>
-                    <Select.Option value="General Inquiry" name="areaOfInterest" >General Inquiry</Select.Option>
+                    <Select.Option value="This Doc Makes House Calls">This Doc Makes House Calls</Select.Option>
+                    <Select.Option value="Spirit and Mind">Spirit and Mind</Select.Option>
+                    <Select.Option value="By the Numbers">By the Numbers</Select.Option>
+                    <Select.Option value="General Inquiry">General Inquiry</Select.Option>
                 </Select>
             </StyledFormItem>
 
