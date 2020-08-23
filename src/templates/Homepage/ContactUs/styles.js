@@ -13,7 +13,7 @@ const InnerContainer = styled(Col)`
     padding: 80px;
     background: white;
     text-align: center;
-    margin-top: 100px;
+    margin: 100px auto 0 auto;
 
     h3 {
         font-family: Playfair Display;

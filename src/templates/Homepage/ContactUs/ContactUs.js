@@ -10,10 +10,12 @@ import { Container, InnerContainer } from './styles'
 const ContactUs = () => {
     return (
         <Container backgroundImage={beachBackground} type="flex" justify="center" >
+        <Link to="/contact">
             <InnerContainer xs={22} md={12}>
                 <h3>Want to learn more or book a consultation?</h3>
-                <Link to="/contact"><Button title="Contact Dr Zhanna" /></Link>
+                <Button title="Contact Dr Zhanna" />
             </InnerContainer>
+            </Link>
         </Container>
     )
 }
