@@ -6,8 +6,23 @@ import { Link } from 'gatsby'
 import { StyledFormItem, StyledForm } from './styles'
 
 const ContactForm = () => {
+    
     const onFinish = values => {
         console.log('Success:', values)
+        const encode = (data) => {
+            return Object.keys(data)
+                .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+                .join("&");
+          }
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact-form", name: "Tile", email: "mcnamara14@gmail.com" , phone: "555-555-5555"})
+          })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+        
     }
 
     const onFinishFailed = errorInfo => {
@@ -22,9 +37,7 @@ const ContactForm = () => {
             }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
-            method="post"
             data-netlify="true"
-            name="contact-form"
         >
             <StyledFormItem
                 name="fullName"
