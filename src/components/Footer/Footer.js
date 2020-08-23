@@ -19,8 +19,8 @@ const Footer = () => {
             {isMobile
                 ? <><P fontSize="12px">
                       @COPYRIGHT DRZHANNA.COM 2020</P>
-                      <P>ZHANNA@DRZHANNA.COM</P>
-                      <P>555-555-5555</P>
+                      <P>DZHANNA@DRZHANNA.COM</P>
+                      <P>858-633-7944</P>
                   </>
                 : <P fontSize="12px">
                       @COPYRIGHT DRZHANNA.COM 2020{' '}
