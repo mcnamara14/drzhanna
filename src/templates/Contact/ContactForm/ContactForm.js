@@ -16,7 +16,7 @@ const ContactForm = () => {
         }
       
     }
-    console.log('state', state)
+
     const onFinish = () => {
         const encode = (data) => {
             return Object.keys(data)
@@ -65,11 +65,26 @@ const ContactForm = () => {
 
             <StyledFormItem name="areaOfInterest" >
                 <Select placeholder="area of interest" name="areaOfInterest" onSelect={(value, event) => handleChange(value, event)}>
-                    <Select.Option value="This Doc Makes House Calls">This Doc Makes House Calls</Select.Option>
-                    <Select.Option value="Spirit and Mind">Spirit and Mind</Select.Option>
-                    <Select.Option value="By the Numbers">By the Numbers</Select.Option>
-                    <Select.Option value="General Inquiry">General Inquiry</Select.Option>
+                    <Select.Option value="This Doc Makes House Calls" name="areaOfInterest">This Doc Makes House Calls</Select.Option>
+                    <Select.Option value="Spirit and Mind" name="areaOfInterest">Spirit and Mind</Select.Option>
+                    <Select.Option value="By the Numbers" name="areaOfInterest">By the Numbers</Select.Option>
+                    <Select.Option value="General Inquiry" name="areaOfInterest">General Inquiry</Select.Option>
                 </Select>
+            </StyledFormItem>
+
+            <StyledFormItem 
+                name="email" 
+                rules={[
+                    {
+                        required: true,
+                        message: 'Please input your email'
+                    }
+                ]}>
+                <Input placeholder="email address" name="email" onChange={(event) => handleChange(event)} />
+            </StyledFormItem>
+
+            <StyledFormItem name="phone" >
+                <Input placeholder="phone number" name="phone" onChange={(event) => handleChange(event)} />
             </StyledFormItem>
 
             <StyledFormItem name="message" >
