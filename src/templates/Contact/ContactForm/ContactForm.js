@@ -8,17 +8,16 @@ import { StyledFormItem, StyledForm } from './styles'
 const ContactForm = () => {
     
     const onFinish = values => {
-        console.log('Success:', values)
         const encode = (data) => {
             return Object.keys(data)
                 .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
                 .join("&");
           }
-
+          console.log('encode', encode({ "form-name": "contact-form", "name": "Tile", "email": "mcnamara14@gmail.com" , "phone": "555-555-5555"}))
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact-form", name: "Tile", email: "mcnamara14@gmail.com" , phone: "555-555-5555"})
+            body: encode({ "form-name": "contact-form", "name": "Tile", "email": "mcnamara14@gmail.com" , "phone": "555-555-5555"})
           })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
