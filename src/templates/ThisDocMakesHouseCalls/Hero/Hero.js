@@ -9,7 +9,7 @@ const Hero = ({ heroImage, text }) => {
     return (
         <Container>
             <Row gutter={60} type="flex" justify="center">
-                <Copy xs={22} xl={18} xxl={16}>
+                <Copy xs={20} xl={18} xxl={16}>
                     <InnerContainer>
                         <h1>This Doc Makes House Calls</h1>
                         <p className="this-doc-makes-house-calls--subhead">
