@@ -8,14 +8,16 @@ import { StyledFormItem, StyledForm } from './styles'
 const ContactForm = () => {
     const [state, setState] = useState({})
 
-    const handleChange = (e) => {
-      setState({ ...state, [e.target.name]: e.target.value })
+    const handleChange = (e, event) => {
+        console.log('event', event  )
+        if (event) {
+            setState({ ...state, [event.name]: event.value })
+        } else {
+            setState({ ...state, [e.target.name]: e.target.value })
+        }
+      
     }
-
-    const handleSelect = (value, event, name) => {
-        setState({ ...state, [name]: value })
-      }
-
+    console.log('state', state)
     const onFinish = () => {
         const encode = (data) => {
             return Object.keys(data)
@@ -68,7 +70,7 @@ const ContactForm = () => {
             </StyledFormItem>
 
             <StyledFormItem name="areaOfInterest" >
-                <Select placeholder="area of interest" name="areaOfInterest" onSelect={(value, event) => handleSelect(value, event, "areaOfInterest")}>
+                <Select placeholder="area of interest" name="areaOfInterest" onSelect={(value, event) => handleChange(value, event)}>
                     <Select.Option value="This Doc Makes House Calls" name="areaOfInterest" >This Doc Makes House Calls</Select.Option>
                     <Select.Option value="Spirit and Mind" name="areaOfInterest" >Spirit and Mind</Select.Option>
                     <Select.Option value="By the Numbers" name="areaOfInterest" >By the Numbers</Select.Option>
