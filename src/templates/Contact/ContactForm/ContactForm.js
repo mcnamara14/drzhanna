@@ -29,7 +29,7 @@ const ContactForm = () => {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact-form", ...state})
           })
-            .then(() => alert("Success!"))
+            .then(() => alert("Thank you for contacting Dr. Zhanna! We will get back to you as soon as we can."))
             .catch(error => alert(error));
         
     }
