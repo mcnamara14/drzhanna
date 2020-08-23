@@ -7,6 +7,7 @@ import InnerWrapper from '../../components/InnerWrapper/InnerWrapper'
 import SpiritAndMind from './SpiritAndMind/SpiritAndMind';
 import ContactUs from './ContactUs/ContactUs';
 import ByTheNumbers from './ByTheNumbers/ByTheNumbers';
+import watchTheShowImg from '../../images/this-doc-makes-house-calls-coming-soon.jpg'
 
 import { Section } from './styles'
 
@@ -25,7 +26,7 @@ const Homepage = ({ data: { contentfulHomepage } }) => {
                 <Hero text={heroText} image={heroImage} title={heroTitle} />
             </Section>
             <InnerWrapper>
-                <HouseCalls text={houseCallsText} image={houseCallsImage} />
+                <HouseCalls text={houseCallsText} image={watchTheShowImg} />
             </InnerWrapper>
             <SpiritAndMind />
             <ContactUs />

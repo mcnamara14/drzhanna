@@ -4,10 +4,6 @@ import { Col } from 'antd'
 const Container = styled.div`
     margin: 150px 0 60px 0;
 
-    &:hover {
-        cursor: pointer;
-    }
-
     button {
         font-family: Montserrat;
         font-size: 12px;
@@ -47,16 +43,14 @@ const Image = styled(Col)`
     }
 `
 
-const MobileImage = styled(Col)`
-    background: ${({ backgroundImage }) => `url(${backgroundImage})`};
-    background-size: cover;
-    height: 400px;
+const MobileImage = styled.img`
+    height: auto;
     width: 80%;
     display: none;
  
     @media (max-width: 768px) {
         display: block;
-        margin: 0 auto 40px auto;
+        margin: 30px auto 40px auto;
         width: 100%;
     }
 `

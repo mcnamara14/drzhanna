@@ -19,13 +19,13 @@ const Header = ({ path }) => {
 
     return (
         <Container>
-            <Link to="/home"><img src={logo} /></Link>
+            <Link to="/"><img src={logo} /></Link>
             {isMobile
                 ? <MobileMenu />
                 : <Navigation>
                       <ul>
                           <li>
-                              <Link to="/home">
+                              <Link to="/">
                                   <P
                                       fontSize="12px"
                                       fontWeight={path === '/' && 'bold'}

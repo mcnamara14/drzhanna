@@ -25,21 +25,17 @@ const HouseCalls = ({ title, image, text }) => {
             <Row gutter={100} type="flex" justify="center">
                 <Image
                     xs={24}
-                    md={8}
-                    backgroundImage={image.file.url}
+                    md={11}
+                    backgroundImage={image}
                     onClick={() => toggleVideoOpen(true)}
                 >
-                    <SplitPlayButton />
                 </Image>
-                <Copy xs={24} md={12}>
+                <Copy xs={24} md={10}>
                     <h1>This Doc Makes House Calls</h1>
                     <MobileImage
-                        xs={24}
-                        md={8}
-                        backgroundImage={image.file.url}
-                        onClick={() => toggleVideoOpen(true)}
+                        src={image}
+                        // onClick={() => navigate('/this-doc-makes-house-calls')}
                     >
-                        <SplitPlayButton />
                     </MobileImage>
                     <RichText content={text.json} />
                     <button>
