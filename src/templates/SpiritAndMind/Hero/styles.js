@@ -34,6 +34,10 @@ const Container = styled.div`
             bottom: -15px;
             left: -15px;
             z-index: 1;
+
+            @media (max-width: 576px) {
+                display: none;
+            }
         }
 
         h1 {
