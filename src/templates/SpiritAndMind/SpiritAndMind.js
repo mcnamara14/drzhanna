@@ -12,7 +12,7 @@ import Bio from './Bio/Bio';
 import { Section } from './styles'
 
 const SpiritAndMind = ({ data: { contentfulSpiritAndMind } }) => {
-    const { heroImage, heroText, bioImage, bioText } = contentfulSpiritAndMind
+    const { heroImage, heroText, bio, bioImage } = contentfulSpiritAndMind
 
     return (
         <Layout path="/spirit-and-mind">
@@ -29,7 +29,7 @@ const SpiritAndMind = ({ data: { contentfulSpiritAndMind } }) => {
                 />
                 <Pricing />
             </InnerWrapper>
-            <Bio image={bioImage} text={bioText.bioText}/>
+            <Bio image={bioImage} text={bio.json}/>
         </Layout>
     )
 }

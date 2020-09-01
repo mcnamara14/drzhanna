@@ -27,6 +27,9 @@ export const SpiritAndMind = graphql`
         bioText {
             bioText
         }
+        bio {
+            json
+        }
     }
 `
 
