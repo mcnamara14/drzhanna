@@ -13,7 +13,7 @@ const Hero = () => {
                 </h1>
                 <p>
                     <span>
-                        Under $5 to buy; Under 15 minutes to make; and Under 300
+                        Under $5 to buy; Under 20 minutes to make; and Under 300
                         cal. to eat; Recipe for Success!
                     </span>
                 </p>
