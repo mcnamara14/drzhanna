@@ -1,18 +1,17 @@
 import { Col, Row } from 'antd';
 import React, { useEffect, useState } from 'react';
 import Mailchimp from 'react-mailchimp-form'
-
-import image from '../../images/this-doc-makes-housecalls--img.jpg'
+import image from '../../images/by-the-numbers--hero-bg.jpg'
 
 import { Container } from './styles'
  
 const MailChimpModal = () => {
-  const [isModalOpen, setIsModalOpen] = useState(true)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
-      // setIsModalOpen(false)
-    }, 8000)
+      setIsModalOpen(true)
+    }, 2000)
   }, [])
 
   const fields = [
@@ -42,7 +41,7 @@ const MailChimpModal = () => {
         bgImage={image}
         width={900}
         // onOk={this.handleOk}
-        // onCancel={this.handleCancel}
+        onCancel={() => setIsModalOpen(false)}
       >
         <Row>
           <Col xs={12} className="mail-chimp-modal--image" />
