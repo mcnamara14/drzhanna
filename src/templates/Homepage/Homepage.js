@@ -10,6 +10,7 @@ import ByTheNumbers from './ByTheNumbers/ByTheNumbers';
 import watchTheShowImg from '../../images/this-doc-makes-house-calls-coming-soon.jpg'
 
 import { Section } from './styles'
+import MailChimpModal from '../../components/MailChimpModal'
 
 const Homepage = ({ data: { contentfulHomepage } }) => {
     const {
@@ -21,17 +22,20 @@ const Homepage = ({ data: { contentfulHomepage } }) => {
     } = contentfulHomepage
 
     return (
-        <Layout path="/">
-            <Section type="flex" justify="center">
-                <Hero text={heroText} image={heroImage} title={heroTitle} />
-            </Section>
-            <InnerWrapper>
-                <HouseCalls text={houseCallsText} image={watchTheShowImg} />
-            </InnerWrapper>
-            <SpiritAndMind />
-            <ContactUs />
-            <ByTheNumbers />
-        </Layout>
+        <>
+            <MailChimpModal />
+            <Layout path="/">
+                <Section type="flex" justify="center">
+                    <Hero text={heroText} image={heroImage} title={heroTitle} />
+                </Section>
+                <InnerWrapper>
+                    <HouseCalls text={houseCallsText} image={watchTheShowImg} />
+                </InnerWrapper>
+                <SpiritAndMind />
+                <ContactUs />
+                <ByTheNumbers />
+            </Layout>
+        </>
     )
 }
 
