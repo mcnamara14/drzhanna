@@ -10,6 +10,28 @@ const Container = styled(Modal)`
 
   .mail-chimp-modal--form-fields {
     margin-top: 25px;
+
+    div {
+      width: 100% !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+
+    input {
+      border: 1px solid #eee;
+      border-radius: 3px;
+      width: 100%;
+      padding: 10px 10px 10px 20px !important;
+      display: flex;
+      align-items: center;
+      font-size: 16px !important;
+      margin-bottom: 10px;
+
+      &::placeholder {
+        font-size: 16px;
+        color: #aaa;
+      }
+    }
   }
 
   .ant-modal-content {
@@ -48,6 +70,7 @@ const Container = styled(Modal)`
 
       &:hover {
         background: #bb9524;
+        cursor: pointer;
       }
 
       span {
@@ -55,15 +78,6 @@ const Container = styled(Modal)`
         font-weight: lighter;
         font-size: 14px;
       }
-    }
-
-    input {
-      border: 1px solid #eee;
-      border-radius: 3px;
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 10px;
-      display: block;
     }
 
     h2 {
