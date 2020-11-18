@@ -51,7 +51,7 @@ const Container = styled(Modal)`
   }
 
   .mail-chimp-modal--form {
-    padding: 20px 60px 20px 20px;
+    padding: 25px 60px 25px 25px;
 
     button {
       background: #d0a72d;
