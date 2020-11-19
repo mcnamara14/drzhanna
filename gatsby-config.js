@@ -38,22 +38,13 @@ module.exports = {
       options: contentfulConfig,
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Playfair Display`,
-            variants: [`400`, `500`, `600`, `700`]
-          },
-          {
-            family: `Montserrat`,
-            variants: [`100`, `200`, `300`, `400`, `500`, `600`, `700`]
-          },
-          {
-            family: `Quicksand`,
-            variants: [`300`, `500`, `700`]
-          },
-        ],
+          `Playfair Display\:400, 500, 600,700`, 
+          `Montserrat\:100, 200, 300, 400, 500, 600, 700`, 
+          `Quicksand\: 300, 500, 700`], 
+          display: 'swap'
       },
     },
     {
