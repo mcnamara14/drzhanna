@@ -1,4 +1,4 @@
-import { Col, Row } from 'antd';
+import { Col, Grid, Row } from 'antd';
 import React, { useEffect, useState } from 'react';
 // import Mailchimp from 'react-mailchimp-form'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
@@ -30,17 +30,19 @@ const CustomForm = ({ status, message, onValidated }) => {
         display: "inline-block"
       }}
     >
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+      {status === "sending" && <div style={{ color: "blue" }} className="mail-chimp-form--status">sending...</div>}
       {status === "error" && (
         <div
           style={{ color: "red" }}
           dangerouslySetInnerHTML={{ __html: message }}
+          className="mail-chimp-form--status"
         />
       )}
       {status === "success" && (
         <div
           style={{ color: "green" }}
           dangerouslySetInnerHTML={{ __html: message }}
+          className="mail-chimp-form--status"
         />
       )}
       <input
@@ -59,7 +61,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         placeholder="Email"
       />
       <button onClick={submit}>
-        Submit
+        ENTER TO WIN
       </button>
     </div>
   );
@@ -68,32 +70,17 @@ const CustomForm = ({ status, message, onValidated }) => {
 const MailChimpModal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
+  const { useBreakpoint } = Grid;
+
+  const { md } = useBreakpoint()
+
+  const isMobile = !md
+  
   useEffect(() => {
     setTimeout(() => {
       setIsModalOpen(true)
     }, 2000)
   }, [])
-
-  const fields = [
-    {
-      name: 'EMAIL',
-      placeholder: 'Email',
-      type: 'email',
-      required: true
-    },
-    {
-      name: 'FNAME',
-      placeholder: 'First Name',
-      type: 'text',
-      required: false
-    },
-    {
-      name: 'LNAME',
-      placeholder: 'Last Name',
-      type: 'text',
-      required: false
-    }
-  ]
 
   const url = "https://drzhanna.us2.list-manage.com/subscribe/post?u=863a065d37813a158479e0f3d&amp;id=42565cb0c8";
 
@@ -101,13 +88,12 @@ const MailChimpModal = () => {
       <Container
         visible={isModalOpen}
         bgImage={image}
-        width={900}
-        // onOk={this.handleOk}
+        width={isMobile ? '90vw' : 900}
         onCancel={() => setIsModalOpen(false)}
       >
         <Row>
-          <Col xs={12} className="mail-chimp-modal--image" />
-          <Col xs={12} className="mail-chimp-modal--form">
+          <Col xs={24} md={12} className="mail-chimp-modal--image" />
+          <Col xs={24} md={12} className="mail-chimp-modal--form">
             <h2>Win a Free copy of Dr. Zhanna’s New Recipe Book <span><span>By</span> The Numbers</span> !</h2>
             <p>Submit your name and email address to receive Dr. Zhanna’s new book, By the Numbers, for free.</p>
             <div className="mail-chimp-modal--form-fields">
