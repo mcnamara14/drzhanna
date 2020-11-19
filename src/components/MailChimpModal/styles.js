@@ -125,6 +125,8 @@ const Container = styled(Modal)`
   }
 
   @media (max-width: 768px) {
+    top: 20px;
+
     .mail-chimp-modal--image {
       height: 175px;
     }
@@ -138,7 +140,7 @@ const Container = styled(Modal)`
     }
 
     .mail-chimp-modal--form {
-      padding: 15px 60px 25px 25px;
+      padding: 25px;
     }
   } 
 `
