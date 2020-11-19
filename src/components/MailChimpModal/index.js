@@ -30,17 +30,17 @@ const CustomForm = ({ status, message, onValidated }) => {
         display: "inline-block"
       }}
     >
-      {status === "sending" && <div style={{ color: "blue" }} className="mail-chimp-form--status">sending...</div>}
+      {status === "sending" && <div style={{ color: "#d0a72d" }} className="mail-chimp-form--status">sending...</div>}
       {status === "error" && (
         <div
-          style={{ color: "red" }}
+          style={{ color: "coral" }}
           dangerouslySetInnerHTML={{ __html: message }}
           className="mail-chimp-form--status"
         />
       )}
       {status === "success" && (
         <div
-          style={{ color: "green" }}
+          style={{ color: "#d0a72d" }}
           dangerouslySetInnerHTML={{ __html: message }}
           className="mail-chimp-form--status"
         />
