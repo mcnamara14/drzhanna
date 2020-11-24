@@ -103,6 +103,11 @@ const Container = styled(Modal)`
       font-family: Montserrat;
       font-size: 14px;
       line-height: 22px;
+      padding-right: 10px;
+
+      @media (max-width: 768px) {
+        padding-right: 50px;
+      }
     }
 
     span {
