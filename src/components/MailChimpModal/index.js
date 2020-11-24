@@ -94,7 +94,7 @@ const MailChimpModal = () => {
         <Row>
           <Col xs={24} md={12} className="mail-chimp-modal--image" />
           <Col xs={24} md={12} className="mail-chimp-modal--form">
-            <h2>Win a Free copy of Dr. Zhanna’s New Recipe Book <span><span>By</span> The Numbers</span> !</h2>
+            <h2>Win a Free copy of {!isMobile && <br />}Dr. Zhanna’s New Recipe Book {!isMobile && <br />}<span><span>By</span> The Numbers</span> !</h2>
             <p>Submit your name and email address to receive Dr. Zhanna’s new book, By the Numbers, for free.</p>
             <div className="mail-chimp-modal--form-fields">
               <MailchimpSubscribe
