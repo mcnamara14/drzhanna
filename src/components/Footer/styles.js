@@ -18,6 +18,13 @@ const Container = styled.div`
         margin: 0 20px;
     }
 
+    img {
+        height: 32px;
+        width: 32px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
     @media (max-width: 568px) {
         display: block;
 

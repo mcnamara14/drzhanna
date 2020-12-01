@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from '../../components/Header/Header'
-import { Col, Row, Form, Input, Button, Checkbox } from 'antd'
+import { Col, Row, } from 'antd'
 import { H1, P } from '../../components/typography/typography'
 import Layout from '../../components/layout'
-
 import { Section } from './styles'
 import ContactForm from './ContactForm/ContactForm'
+import facebookIcon from '../../images/facebook-icon.png'
+import instagramIcon from '../../images/instagram-icon.png'
 
 const Contact = () => {
     return (
@@ -35,6 +35,9 @@ const Contact = () => {
                                         drzhanna@drzhanna.com
                                     </a>
                                 </span>
+                            </P>
+                            <P color="#000000">
+                                Follow us on <a href="https://www.facebook.com/Dr-Zhanna-101592835098219" target="_blank"><img src={facebookIcon} /></a><a href="https://www.instagram.com/drzhanna90210/" target="_blank"><img src={instagramIcon} /></a>
                             </P>
                         </Col>
                         <Col xs={24} sm={12}>

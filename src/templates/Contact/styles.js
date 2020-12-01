@@ -9,6 +9,13 @@ const Section = styled(Row)`
     font-weight: bold;
   }
 
+  img {
+      height: 32px;
+      width: 32px;
+      display: inline-block;
+      margin-left: 10px;
+  }
+
   @media (max-width: 768px) {
     margin: 0;
   }
