@@ -25,7 +25,7 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
                                 {title}
                             </h1>
                             <Img fluid={image.fluid} className="recipe-detail--mobile-image" />
-                            <h2>Ingredients</h2>
+                            <h2>What</h2>
                             <ul>
                                 {ingredients?.map(ingredient => {
                                     return (
@@ -37,7 +37,7 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
                                     )
                                 })}
                             </ul>
-                            <h2>Directions</h2>
+                            <h2>How</h2>
                             {directions?.map((direction, index) => {
                                 return (
                                     <div className="recipe-detail--step">

@@ -46,7 +46,7 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
                             </div>
                         </Col>
                         <Col xs={24} sm={12} className="recipe-detail--ingredients">
-                            <h2>Ingredients</h2>
+                            <h2>What</h2>
                             <ul>
                                 {ingredients?.map(ingredient => {
                                     return (
@@ -58,7 +58,7 @@ const RecipeDetail = ({ data: { contentfulRecipe } }) => {
                                     )
                                 })}
                             </ul>
-                            <h2>Directions</h2>
+                            <h2>How</h2>
                             <RichText content={directions.json} />
                         </Col>
                     </Row>
